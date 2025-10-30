@@ -1,0 +1,15 @@
+:root{
+    --color-primary   : #0099CC;
+    --color-secondary : #FFCC00;
+    --color-titles    : #333333;
+    --color-neutral-0 : #ffffff;
+    --color-neutral-1 : #000000;     
+}
+
+html, body{
+    font-family       : 'Poppins', sans-serif;
+}
+
+nav.active{
+    display: flex;
+}
