@@ -17,8 +17,8 @@
 
     <title>Agência de Viagens</title>
 </head>
-<body class="bg-black">
-    <header class="w-full bg-[var(--color-primary)] h-[70px] flex items-center justify-between px-2 relative">
+<body class="bg-[#f9fbfc]">
+    <header class="w-full bg-[var(--color-primary)] h-[70px] flex items-center justify-between px-6 relative">
         <span class="text-2xl text-white font-bold" >Viagem dos Sonhos ✈️</span>
         <nav class="hidden w-full absolute top-[100%] left-0 h-[calc(100vh-70px)] bg-gray-950 items-center justify-center" id="nav">
             <ul >
@@ -28,31 +28,31 @@
                 <li class="p-2 text-center"><a href="#" class="text-white text-[23px]">Contato</a></li>
             </ul>
         </nav>
-       <div class="flex items-center">
+       <div class="flex items-center gap-2">
          <span class="text-2xl">🌙</span>
          <div class="fa-solid fa-bars text-white font-bold text-[28px] " id="hamburger"></div>
        </div>
     </header>
-    <!-- <main>
-        <section class="hero">
-            <h1>Descubra novos destinos incríveis</h1>
-            <h2>Viaje pelo mundo com conforto e economia. Viva experiências inesquecíveis</h2>
-            <a href="#">Explorar agora</a>
+    <main>
+        <section class="hero bg-[url('img/viagem.jpg')] bg-cover bg-center bg-no-repeat w-full flex items-center justify-center flex-col p-16">
+            <h1 class="text-white text-[32px] text-center font-semibold leading-[45px] mb-5 max-w-sm mx-auto">Descubra novos destinos incríveis</h1>
+            <p class="text-center text-white text-[17.6px] max-w-sm mx-auto">Viaje pelo mundo com conforto e economia.Viva experiências<br> inesquecíveis</p>
+            <a href="#" type="button" class="bg-[var(--color-secondary)] py-3 px-6 rounded-md text-md mt-8">Explorar agora</a>
         </section>
-        <section class="cards">
-            <h2>Destinos Populares</h2>
-            <div class="card">
-                <img src="./img/praia.jpg" alt="imagem praia">
+        <section class="cards w-full py-10">
+            <h2 class="text-center text-2xl text-[var(--color-titles)] font-[700] mb-7">Destinos Populares</h2>
+            <div class="card bg-[url(img/praia.jpg)] bg-cover bg-center w-full h-[330px]">
+                <!-- <img src="./img/praia.jpg" alt="imagem praia"> -->
                 <h2>Praia dos Sonhos</h2>
                 <p>Areia branca, mar cristalino e o pôr do sol mais bonito do mundo.</p>
             </div>
-            <div class="card">
-                <img src="./img/montanha.jpg" alt="imagem praia">
+            <div class="card bg-[url(img/montanha.jpg)] bg-cover bg-center">
+                <!-- <img src="./img/montanha.jpg" alt="imagem praia"> -->
                 <h2>Montanhas Encantadas</h2>
                 <p>Um refúgio perfeito para quem ama natureza e aventura.</p>
             </div>
-            <div class="card">
-                <img src="./img/cultura.jpg" alt="imagem praia">
+            <div class="card bg-[url(img/cultura.jpg)] bg-cover bg-center">
+                <!-- <img src="./img/cultura.jpg" alt="imagem praia"> -->
                 <h2>Cidade Luz</h2>
                 <p>Cultura, gastronomia e romance nas ruas mais charmosas do mundo.</p>
             </div>
@@ -61,6 +61,6 @@
     </main>
     <footer>
         <div class="copy">© 2025 Viagem dos Sonhos — Todos os direitos reservados.</div>
-    </footer> -->
+    </footer>
 </body>
 </html>
