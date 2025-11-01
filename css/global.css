@@ -13,3 +13,7 @@ html, body{
 nav.active{
     display: flex;
 }
+
+.modal-foto.active{
+    display: flex;
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,66 +10,210 @@
     <script src="https://kit.fontawesome.com/e08f3fd03f.js" crossorigin="anonymous"></script>
 
     <!-- JS -->
-    <script src="./js/script.js" defer></script> 
+    <script type="module" src="./js/script.js" defer></script>
 
-    <!-- CSS - Tailwind/Global -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" defer></script> 
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/global.css">
 
-    <title>Agência de Viagens</title>
+    <!-- Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Agência de Viagens ✈️</title>
 </head>
+
 <body class="bg-[#f9fbfc]">
-    <header class="w-full bg-[var(--color-primary)] h-[70px] flex items-center justify-between px-6 relative">
-        <span class="text-2xl text-white font-bold" >Viagem dos Sonhos ✈️</span>
-        <nav class="hidden w-full absolute top-[100%] left-0 h-[calc(100vh-70px)] bg-gray-950 items-center justify-center" id="nav">
-            <ul >
-                <li class="p-2 text-center"><a href="/" class="text-white text-[23px] ">Início</a></li>
-                <li class="p-2 text-center"><a href="#" class="text-white text-[23px]">Destinos</a></li>
-                <li class="p-2 text-center"><a href="#" class="text-white text-[23px]">Promoções</a></li>
-                <li class="p-2 text-center"><a href="#" class="text-white text-[23px]">Contato</a></li>
+    <header
+        class="w-full bg-[var(--color-primary)] h-[70px] flex items-center justify-between px-6 relative md:fixed z-50">
+        <a href="/"><span class="text-2xl text-white font-bold whitespace-nowrap">Viagem dos Sonhos ✈️</span></a>
+        <nav id="nav"
+            class="w-full hidden absolute top-[100%] left-0 h-[calc(100vh-70px)] bg-gray-950 items-center justify-center md:static md:!flex md:!flex-row md:h-[70px] md:!top-0 md:bg-inherit">
+            <ul class="flex flex-col md:flex-row md:gap-2">
+                <li class="p-2 text-center link"><a href="#inicio"
+                        class="text-[var(--color-secondary)] text-[23px] md:text-[17px] hover:underline  md:text-white">Início</a>
+                </li>
+                <li class="p-2 text-center link"><a href="#destinos" id="link-destinos"
+                        class="text-[var(--color-secondary)] text-[23px] md:text-[17px] hover:underline  md:text-white">Destinos</a>
+                </li>
+                <li class="p-2 text-center link"><a href="#galeria"
+                        class="text-[var(--color-secondary)] text-[23px] md:text-[17px] hover:underline  md:text-white">Galeria</a>
+                </li>
+                <li class="p-2 text-center link"><a href="#promocoes" id="link-promocoes"
+                        class="text-[var(--color-secondary)] text-[23px] md:text-[17px] hover:underline  md:text-white">Promoções</a>
+                </li>
+                <li class="p-2 text-center link"><a href="#contato"
+                        class="text-[var(--color-secondary)] text-[23px] md:text-[17px] hover:underline  md:text-white">Contato</a>
+                </li>
             </ul>
         </nav>
-       <div class="flex items-center gap-2">
-         <span class="text-2xl">🌙</span>
-         <div class="fa-solid fa-bars text-white font-bold text-[28px] " id="hamburger"></div>
-       </div>
+        <div class="flex items-center gap-2">
+            <span class="text-2xl cursor-pointer">🌙</span>
+            <i class="fa-solid fa-bars text-white font-bold text-[28px] md:!hidden" id="hamburger"></i>
+        </div>
     </header>
     <main>
-        <section class="hero bg-[url('img/viagem.jpg')] bg-cover bg-center bg-no-repeat w-full flex items-center justify-center flex-col p-16">
-            <h1 class="text-white text-[32px] text-center font-semibold leading-[45px] mb-5 max-w-sm mx-auto">Descubra novos destinos incríveis</h1>
-            <p class="text-center text-white text-[17.6px] max-w-sm mx-auto">Viaje pelo mundo com conforto e economia.Viva experiências<br> inesquecíveis</p>
-            <a href="#" type="button" class="bg-[var(--color-secondary)] py-3 px-6 rounded-md text-md mt-8 hover:bg-[#2e2e2e] hover:text-[white] transition-all duration-100 ease-in border-[3px] border-transparent hover:shadow-[0_0_0_3px_rgba(255,204,0,1)] ">Explorar agora</a>
+        <section id="inicio" class="hero bg-[url('img/hero.jpg')] bg-cover bg-center bg-no-repeat w-full h-auto flex items-center 
+                justify-center flex-col p-16 xl:h-[600px] md:p-30">
+            <h1 class="text-white text-[32px] text-center font-semibold leading-[45px] mb-5 max-w-sm mx-auto
+                md:text-[50px] md:leading-[55px] xl:text-[60px] xl:leading-[65px] xl:max-w-3xl">
+                Descubra novos destinos incríveis
+            </h1>
+            <p class="text-center text-white text-[17.6px] max-w-sm mx-auto">Viaje pelo mundo com conforto e
+                economia.Viva experiências<br> inesquecíveis</p>
+            <a href="#" type="button"
+                class="bg-[var(--color-secondary)] py-3 px-6 rounded-md text-md mt-8 hover:bg-[#2e2e2e] hover:text-[white] transition-all duration-100 ease-in border-[3px] border-transparent hover:shadow-[0_0_0_3px_rgba(255,204,0,1)] ">Explorar
+                agora</a>
         </section>
 
-        <section class="destinos py-12 px-4">
-            <h2 class="text-center text-2xl text-[var(--color-titles)] font-[700] mb-7">Destinos Populares</h2>
+        <section class="destinos py-12 px-4" id="destinos">
+            <h2 class="text-center text-2xl text-[var(--color-titles)] font-[700] mb-7">Destinos</h2>
 
             <div class="cards grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-6 mt-8">
-                
-                <div class="card w-full h-[330px] rounded-xl shadow-[0px_2px_8px_rgba(0,0,0,0.1)] overflow-hidden transition-[transform_0.3s,background_0.3s,color_0.3s] hover:scale-[1.03] cursor-pointer">
-                    <img src="./img/praia.jpg" alt="imagem praia" class="w-full h-44 object-cover">
-                    <h3 class="text-[var(--color-primary)] m-3 font-[700] text-[18.72px] text-center mt-6">Praia dos Sonhos</h3>
-                    <p class="text-center mx-4 mb-4 text-[15.2px]">Areia branca, mar cristalino e o pôr do sol mais bonito do mundo.</p>
+
+                <div
+                    class="card w-full h-[330px] rounded-xl shadow-[0px_2px_8px_rgba(0,0,0,0.1)] overflow-hidden transition-[transform_0.3s,background_0.3s,color_0.3s] hover:scale-[1.03] cursor-pointer">
+                    <img src="./img/cards/praia.jpg" alt="imagem praia" class="w-full h-44 object-cover">
+                    <h3 class="text-[var(--color-primary)] m-3 font-[700] text-[18.72px] text-center mt-6">Praia dos
+                        Sonhos</h3>
+                    <p class="text-center mx-4 mb-4 text-[15.2px]">Areia branca, mar cristalino e o pôr do sol mais
+                        bonito do mundo.</p>
                 </div>
 
-                <div class="card w-full h-[330px] rounded-xl shadow-[0px_2px_8px_rgba(0,0,0,0.1)] overflow-hidden transition-[transform_0.3s,background_0.3s,color_0.3s] hover:scale-[1.03] cursor-pointer">
-                    <img src="./img/montanha.jpg" alt="imagem montanha" class="w-full h-44 object-cover">
-                    <h3 class="text-[var(--color-primary)] m-3 font-[700] text-[18.72px] text-center mt-6">Montanhas Encantadas</h3>
-                    <p class="text-center mx-4 mb-4 text-[15.2px]">Um refúgio perfeito para quem ama natureza e aventura.</p>
+                <div
+                    class="card w-full h-[330px] rounded-xl shadow-[0px_2px_8px_rgba(0,0,0,0.1)] overflow-hidden transition-[transform_0.3s,background_0.3s,color_0.3s] hover:scale-[1.03] cursor-pointer">
+                    <img src="./img/cards/montanha.jpg" alt="imagem montanha" class="w-full h-44 object-cover">
+                    <h3 class="text-[var(--color-primary)] m-3 font-[700] text-[18.72px] text-center mt-6">Montanhas
+                        Encantadas</h3>
+                    <p class="text-center mx-4 mb-4 text-[15.2px]">Um refúgio perfeito para quem ama natureza e
+                        aventura.</p>
                 </div>
 
-                <div class="card w-full h-[330px] rounded-xl shadow-[0px_2px_8px_rgba(0,0,0,0.1)] overflow-hidden transition-[transform_0.3s,background_0.3s,color_0.3s] hover:scale-[1.03] cursor-pointer">
-                    <img src="./img/cultura.jpg" alt="imagem cultura" class="w-full h-44 object-cover">
-                    <h3 class="text-[var(--color-primary)] m-3 font-[700] text-[18.72px] text-center mt-6">Cidade Luz</h3>
-                    <p class="text-center mx-4 mb-4 text-[15.2px]">Cultura, gastronomia e romance nas ruas mais charmosas do mundo.</p>
-                </div>               
-                    
+                <div
+                    class="card w-full h-[330px] rounded-xl shadow-[0px_2px_8px_rgba(0,0,0,0.1)] overflow-hidden transition-[transform_0.3s,background_0.3s,color_0.3s] hover:scale-[1.03] cursor-pointer">
+                    <img src="./img/cards/cultura.jpg" alt="imagem cultura" class="w-full h-44 object-cover">
+                    <h3 class="text-[var(--color-primary)] m-3 font-[700] text-[18.72px] text-center mt-6">Cidade Luz
+                    </h3>
+                    <p class="text-center mx-4 mb-4 text-[15.2px]">Cultura, gastronomia e romance nas ruas mais
+                        charmosas do mundo.</p>
+                </div>
+
             </div>
-            
+
         </section>
+
+        <section class="galeria py-12 px-4 relative" id="galeria">
+            <h2 class="text-center text-2xl text-[var(--color-titles)] font-[700] mb-7">Galeria</h2>
+
+            <div class="galeria grid grid-cols-[repeat(auto-fit,minmax(250px,2fr))] gap-6 mt-8 ">
+
+                <div class="flex items-center justify-center gap-2 flex-wrap">
+                    <img src="./img/galeria/foto1.JPG" alt="imagem praia"
+                        class="foto cursor-pointer w-[500px] rounded-lg shadow-md" id="id-foto">
+                    <img src="./img/galeria/foto2.JPG" alt="imagem praia"
+                        class="foto cursor-pointer w-[500px] rounded-lg shadow-md" id="id-foto">
+                    <img src="./img/galeria/foto3.JPG" alt="imagem praia"
+                        class="foto cursor-pointer w-[500px] rounded-lg shadow-md" id="id-foto">
+                    <img src="./img/galeria/foto4.JPG" alt="imagem praia"
+                        class="foto cursor-pointer w-[500px] rounded-lg shadow-md" id="id-foto">
+                    <img src="./img/galeria/foto5.JPG" alt="imagem praia"
+                        class="foto cursor-pointer w-[500px] rounded-lg shadow-md" id="id-foto">
+                    <img src="./img/galeria/foto6.JPG" alt="imagem praia"
+                        class="foto cursor-pointer w-[500px] rounded-lg shadow-md" id="id-foto">
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="promocoes py-12 px-4" id="promocoes">
+            <h2 class="text-center text-2xl text-[var(--color-titles)] font-[700] mb-7">Promoções</h2>
+
+            <div class="cards grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-6 mt-8 ">
+
+                <div
+                    class="card  w-full h-[330px] rounded-xl shadow-[0px_2px_8px_rgba(0,0,0,0.1)] overflow-hidden transition-[transform_0.3s,background_0.3s,color_0.3s] hover:scale-[1.03] cursor-pointer relative z-0 ">
+                    <img src="./img/praia.jpg" alt="imagem praia" class="w-full h-44 object-cover">
+                    <h3 class="text-[var(--color-primary)] m-3 font-[700] text-[18.72px] text-center mt-6">Praia dos
+                        Sonhos</h3>
+                    <p class="text-center mx-4 mb-4 text-[15.2px]">Areia branca, mar cristalino e o pôr do sol mais
+                        bonito do mundo.</p>
+                </div>
+
+                <div
+                    class="card w-full h-[330px] rounded-xl shadow-[0px_2px_8px_rgba(0,0,0,0.1)] overflow-hidden transition-[transform_0.3s,background_0.3s,color_0.3s] hover:scale-[1.03] cursor-pointer relative z-0 ">
+                    <img src="./img/montanha.jpg" alt="imagem montanha" class="w-full h-44 object-cover">
+                    <h3 class="text-[var(--color-primary)] m-3 font-[700] text-[18.72px] text-center mt-6">Montanhas
+                        Encantadas</h3>
+                    <p class="text-center mx-4 mb-4 text-[15.2px]">Um refúgio perfeito para quem ama natureza e
+                        aventura.</p>
+                </div>
+
+                <div
+                    class="card w-full h-[330px] rounded-xl shadow-[0px_2px_8px_rgba(0,0,0,0.1)] overflow-hidden transition-[transform_0.3s,background_0.3s,color_0.3s] hover:scale-[1.03] cursor-pointer relative z-0 ">
+                    <img src="./img/cultura.jpg" alt="imagem cultura" class="w-full h-44 object-cover">
+                    <h3 class="text-[var(--color-primary)] m-3 font-[700] text-[18.72px] text-center mt-6">Cidade Luz
+                    </h3>
+                    <p class="text-center mx-4 mb-4 text-[15.2px]">Cultura, gastronomia e romance nas ruas mais
+                        charmosas do mundo.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="contato py-12 px-4" id="contato">
+            <h2 class="text-center text-2xl text-[var(--color-titles)] font-[700] mb-7">Contato</h2>
+
+            <div class="cards grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-6 mt-8">
+
+                <div
+                    class="card w-full h-[330px] rounded-xl shadow-[0px_2px_8px_rgba(0,0,0,0.1)] overflow-hidden transition-[transform_0.3s,background_0.3s,color_0.3s] hover:scale-[1.03] cursor-pointer">
+                    <img src="./img/praia.jpg" alt="imagem praia" class="w-full h-44 object-cover">
+                    <h3 class="text-[var(--color-primary)] m-3 font-[700] text-[18.72px] text-center mt-6">Praia dos
+                        Sonhos</h3>
+                    <p class="text-center mx-4 mb-4 text-[15.2px]">Areia branca, mar cristalino e o pôr do sol mais
+                        bonito do mundo.</p>
+                </div>
+
+                <div
+                    class="card w-full h-[330px] rounded-xl shadow-[0px_2px_8px_rgba(0,0,0,0.1)] overflow-hidden transition-[transform_0.3s,background_0.3s,color_0.3s] hover:scale-[1.03] cursor-pointer">
+                    <img src="./img/montanha.jpg" alt="imagem montanha" class="w-full h-44 object-cover">
+                    <h3 class="text-[var(--color-primary)] m-3 font-[700] text-[18.72px] text-center mt-6">Montanhas
+                        Encantadas</h3>
+                    <p class="text-center mx-4 mb-4 text-[15.2px]">Um refúgio perfeito para quem ama natureza e
+                        aventura.</p>
+                </div>
+
+                <div
+                    class="card w-full h-[330px] rounded-xl shadow-[0px_2px_8px_rgba(0,0,0,0.1)] overflow-hidden transition-[transform_0.3s,background_0.3s,color_0.3s] hover:scale-[1.03] cursor-pointer">
+                    <img src="./img/cultura.jpg" alt="imagem cultura" class="w-full h-44 object-cover">
+                    <h3 class="text-[var(--color-primary)] m-3 font-[700] text-[18.72px] text-center mt-6">Cidade Luz
+                    </h3>
+                    <p class="text-center mx-4 mb-4 text-[15.2px]">Cultura, gastronomia e romance nas ruas mais
+                        charmosas do mundo.</p>
+                </div>
+
+            </div>
+
+        </section>
+
     </main>
     <footer class="w-full p-4 flex items-center justify-center bg-[var(--color-primary)]">
-        <div class="copy text-white text-center">© 2025 Viagem dos Sonhos — Todos os direitos reservados.</div>
+        <div class="copy text-white text-center">© 2025 Viagem dos Sonhos <br> Todos os direitos reservados a Edsof
+            Informática.</div>
     </footer>
+
+    <!-- MODAL - escondido inicialmente -->
+    <div id="modal" class="fixed inset-0 bg-black/70 hidden items-center justify-center z-50">
+        <div class="relative">
+            <img id="modal-img" class="max-w-[90vw] max-h-[90vh] rounded-lg shadow-lg">
+
+            <!-- botão fechar -->
+            <button id="close-modal" class="absolute top-2 right-2 text-white text-3xl cursor-pointer">
+                &times;
+            </button>
+        </div>
+    </div>
+
 </body>
+
 </html>
