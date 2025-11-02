@@ -37,9 +37,10 @@ document.querySelectorAll('nav a[href^="#"]').forEach(link => {
 const modal       = document.getElementById("modal");
 const modalImg    = document.getElementById("modal-img");
 const closeModal  = document.getElementById("close-modal");
+const fotos       = document.querySelectorAll('.foto')
 
 // pega todas as imagens clicáveis
-document.querySelectorAll(".foto").forEach(img => {
+fotos.forEach(img => {
   img.addEventListener("click", () => {
     modalImg.src = img.src;           // coloca a imagem no modal
     modal.classList.remove("hidden"); // exibe modal

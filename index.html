@@ -64,7 +64,7 @@
                 agora</a>
         </section>
 
-        <section class="destinos py-12 px-4" id="destinos">
+        <section class="destinos py-12 px-4 max-w-8/10 m-auto" id="destinos">
             <h2 class="text-center text-2xl text-[var(--color-titles)] font-[700] mb-7">Destinos</h2>
 
             <div class="cards grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-6 mt-8">
@@ -124,36 +124,79 @@
 
         </section>
 
-        <section class="promocoes py-12 px-4" id="promocoes">
+        <section class="promocoes py-12 px-4 max-w-8/10 m-auto" id="promocoes">
             <h2 class="text-center text-2xl text-[var(--color-titles)] font-[700] mb-7">Promoções</h2>
 
             <div class="cards grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-6 mt-8 ">
-
+                <!-- PLANO 1 -->
                 <div
-                    class="card  w-full h-[330px] rounded-xl shadow-[0px_2px_8px_rgba(0,0,0,0.1)] overflow-hidden transition-[transform_0.3s,background_0.3s,color_0.3s] hover:scale-[1.03] cursor-pointer relative z-0 ">
-                    <img src="./img/praia.jpg" alt="imagem praia" class="w-full h-44 object-cover">
-                    <h3 class="text-[var(--color-primary)] m-3 font-[700] text-[18.72px] text-center mt-6">Praia dos
-                        Sonhos</h3>
-                    <p class="text-center mx-4 mb-4 text-[15.2px]">Areia branca, mar cristalino e o pôr do sol mais
-                        bonito do mundo.</p>
+                    class="card w-full px-2 py-8 mt-30 mb-30 rounded-xl shadow-[0px_2px_8px_rgba(0,0,0,0.1)] overflow-hidden transition-[transform_0.3s,background_0.3s,color_0.3s] relative z-0 bg-[#000000dc] h-auto">
+                     <div class="imagem text-3xl border-1 border-[var(--color-secondary)] rounded-full w-16 p-3 mt-2 ml-2">
+                       🛫
+                     </div>
+                    <h3 class="text-[var(--color-primary)] m-3 font-[700] text-4xl text-left mt-6">Plano Básico</h3>
+                    <p class="text-left mx-4 mb-4 text-[15.2px] text-white">Pra você que quer passar uns dias consigo mesmo.</p>
+                    <p class="text-left text-white text-4xl mx-4 mb-4">R$ 1850,00</p>
+                   
+                    <button class="mx-4 mb-4 py-3 px-[120px] bg-[var(--color-secondary)] rounded-md cursor-pointer hover:bg-[var(--color-tercery)] 
+                    text-[var(--color-gray-dark)] hover:text-black font-bold">Conhecer esse plano</button>
+
+                    <div class="opcoes mx-4 mb-4 rounded-sm p-2 flex items-start flex-col gap-4 flex-1">
+                        <div class="flex gap-4 items-center"><i class="fa-solid fa-person-circle-minus text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">Acomodação Mínima</p></div>
+                        <div class="flex gap-4 items-center"><i class="fa-solid fa-square-caret-down text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">Café da manhã</p></div>
+                        <div class="flex gap-4 items-center"><i class="fa-solid fa-minus text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">Almoço X2</p></div>
+                        <div class="flex gap-4 items-center"><i class="fa-solid fa-heart-circle-minus text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">Passeio matinal</p></div>
+                        <div class="flex gap-4 items-center"><i class="fa-solid fa-comment-nodes text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">AquaIoga</p></div>                        
+                    </div>
+
                 </div>
-
+                <!-- PLANO 2 --> 
                 <div
-                    class="card w-full h-[330px] rounded-xl shadow-[0px_2px_8px_rgba(0,0,0,0.1)] overflow-hidden transition-[transform_0.3s,background_0.3s,color_0.3s] hover:scale-[1.03] cursor-pointer relative z-0 ">
-                    <img src="./img/montanha.jpg" alt="imagem montanha" class="w-full h-44 object-cover">
-                    <h3 class="text-[var(--color-primary)] m-3 font-[700] text-[18.72px] text-center mt-6">Montanhas
-                        Encantadas</h3>
-                    <p class="text-center mx-4 mb-4 text-[15.2px]">Um refúgio perfeito para quem ama natureza e
-                        aventura.</p>
+                    class="card w-full h-auto px-2 py-8 rounded-xl shadow-[0px_2px_8px_rgba(0,0,0,0.1)] overflow-hidden transition-[transform_0.3s,background_0.3s,color_0.3s] relative z-0 bg-[#000000dc] ">
+                     <div class="imagem text-3xl border-1 border-[var(--color-secondary)] rounded-full w-16 p-3 mt-2 ml-2">
+                       🛫
+                     </div>
+                    <h3 class="text-[var(--color-primary)] m-3 font-[700] text-4xl text-left mt-12">Plano Master</h3>
+                    <p class="text-left mx-4 mb-4 text-[15.2px] text-white">Plano mais vendido com tudo que você precisa.</p>
+                    <p class="text-left text-white text-4xl mx-4 mb-4">R$ 2390,00</p>
+                    
+                    <button class="mx-4 mb-4 py-3 px-[120px] bg-[var(--color-secondary)] rounded-md cursor-pointer hover:bg-[var(--color-tercery)] 
+                    text-[var(--color-gray-dark)]  hover:text-black font-bold">Conhecer esse plano</button>
+
+                    <div class="opcoes mx-4 mb-4 rounded-sm p-2 flex items-start flex-col gap-4 flex-1">
+                        <div class="flex gap-4 items-center"><i class="fa-solid fa-person-circle-minus text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">Acomodação Master</p></div>
+                        <div class="flex gap-4 items-center"><i class="fa-solid fa-square-caret-down text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">Café da manhã+Almoço+janta</p></div>
+                        <div class="flex gap-4 items-center"><i class="fa-solid fa-minus text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">Almoço X4</p></div>
+                        <div class="flex gap-4 items-center"><i class="fa-solid fa-heart-circle-minus text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">Passeio matinal com pets</p></div>
+                        <div class="flex gap-4 items-center"><i class="fa-solid fa-comment-nodes text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">AquaIoga+Natação</p></div>                        
+                        <div class="flex gap-4 items-center"><i class="fa-solid fa-brain text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">Acomodação Master</p></div>
+                        <div class="flex gap-4 items-center"><i class="fa-solid fa-archway text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">Café da manhã+Almoço+janta</p></div>
+                        <div class="flex gap-4 items-center"><i class="fa-solid fa-ankh text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">Almoço X4</p></div>
+                        <div class="flex gap-4 items-center"><i class="fa-solid fa-venus-double text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">Passeio matinal com pets</p></div>
+                        <div class="flex gap-4 items-center"><i class="fa-solid fa-file-fragment text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">AquaIoga+Natação</p></div>                        
+                    </div>
                 </div>
-
+                <!-- PLANO 3 -->
                 <div
-                    class="card w-full h-[330px] rounded-xl shadow-[0px_2px_8px_rgba(0,0,0,0.1)] overflow-hidden transition-[transform_0.3s,background_0.3s,color_0.3s] hover:scale-[1.03] cursor-pointer relative z-0 ">
-                    <img src="./img/cultura.jpg" alt="imagem cultura" class="w-full h-44 object-cover">
-                    <h3 class="text-[var(--color-primary)] m-3 font-[700] text-[18.72px] text-center mt-6">Cidade Luz
-                    </h3>
-                    <p class="text-center mx-4 mb-4 text-[15.2px]">Cultura, gastronomia e romance nas ruas mais
-                        charmosas do mundo.</p>
+                    class="card w-full px-2 py-8 mt-30 mb-30 rounded-xl shadow-[0px_2px_8px_rgba(0,0,0,0.1)] overflow-hidden transition-[transform_0.3s,background_0.3s,color_0.3s] relative z-0 bg-[#000000dc] h-auto">
+                     <div class="imagem text-3xl border-1 border-[var(--color-secondary)] rounded-full w-16 p-3 mt-2 ml-2">
+                       🛫
+                     </div>
+                    <h3 class="text-[var(--color-primary)] m-3 font-[700] text-4xl text-left mt-6">Plano Premium</h3>
+                    <p class="text-left mx-4 mb-4 text-[15.2px] text-white">Você feliz com toda família.</p>
+                    <p class="text-left text-white text-4xl mx-4 mb-4">R$ 4920,00</p>
+                    
+                    <button class="mx-4 mb-4 py-3 px-[120px] bg-[var(--color-secondary)] rounded-md cursor-pointer hover:bg-[var(--color-tercery)] 
+                    text-[var(--color-gray-dark)]  hover:text-black font-bold">Conhecer esse plano</button>
+
+                    <div class="opcoes mx-4 mb-4 rounded-sm p-2 flex items-start flex-col gap-4 flex-1">
+                        <div class="flex gap-4 items-center"><i class="fa-solid fa-person-circle-minus text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">Acomodação Máxima</p></div>
+                        <div class="flex gap-4 items-center"><i class="fa-solid fa-square-caret-down text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">Café da manhã</p></div>
+                        <div class="flex gap-4 items-center"><i class="fa-solid fa-minus text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">Almoço X5</p></div>
+                        <div class="flex gap-4 items-center"><i class="fa-solid fa-heart-circle-minus text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">Passeio matinal/vespertino</p></div>
+                        <div class="flex gap-4 items-center"><i class="fa-solid fa-comment-nodes text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">AquaIoga+Natação+Corrida</p></div>                        
+                    </div>
+
                 </div>
 
             </div>

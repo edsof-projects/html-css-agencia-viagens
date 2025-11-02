@@ -1,9 +1,13 @@
 :root{
-    --color-primary   : #0099CC;
-    --color-secondary : #FFCC00;
-    --color-titles    : #333333;
-    --color-neutral-0 : #ffffff;
-    --color-neutral-1 : #000000;     
+    --color-primary     : #0099CC;
+    --color-secondary   : #FFCC00;
+    --color-tercery     : #dbaf00;
+    --color-titles      : #333333;
+    --color-neutral-0   : #ffffff;
+    --color-neutral-1   : #000000;     
+    --color-neutral-3   : #f1f1f1da;
+    --color-gray-dark   : #464646;     
+    --color-gray-course : #9c9c9c;     
 }
 
 html, body{
