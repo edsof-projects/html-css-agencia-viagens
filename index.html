@@ -124,16 +124,17 @@
 
         </section>
 
-        <section class="promocoes py-8 m-auto h-auto bg-red-400 flex flex-col items-center justify-center gap-8 place-items-center" id="promocoes">
+        <section class="promocoes py-8 px-3 m-auto h-auto flex flex-col items-center justify-center gap-8 place-items-center" id="promocoes">
             <h2 class="text-center text-3xl text-[var(--color-titles)] font-[700] ">Promoções</h2>
 
-            <div class="cards grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-8/10">
+            <div class="cards grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
                 <!-- PLANO 1 -->
                 <div class="card h-auto py-3 rounded-xl shadow-[0px_2px_8px_rgba(0,0,0,0.1)] overflow-hidden 
-                    transition-[transform_0.3s,background_0.3s,color_0.3s] relative z-0 bg-[#000000dc] flex flex-col items-center"
+                    transition-[transform_0.3s,background_0.3s,color_0.3s] relative z-0 bg-[#000000dc] 
+                    flex flex-col items-center xl:mt-8"
                 >
                     <div class="imagem text-3xl border-1 border-[var(--color-secondary)] rounded-full w-16 p-3 mt-2 ml-2">
-                    🛫
+                      🛫
                     </div>
                     <h3 class="text-[var(--color-primary)] m-3 font-[700] text-4xl text-left mt-6">Plano Básico</h3>
                     <p class="text-center mx-4 mb-4 text-[15.2px] text-white">Pra você que quer passar uns dias consigo mesmo.</p>
@@ -146,7 +147,7 @@
                         </button>
                     </div>
                     
-                    <div class="opcoes mx-4 mb-4 rounded-sm p-2 flex items-center flex-col gap-4 flex-1">
+                    <div class="opcoes mx-4 mb-4 rounded-sm p-2 flex items-center flex-col gap-4 ">
                         <div class="flex gap-4 items-center"><i class="fa-solid fa-person-circle-minus text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">Acomodação Mínima</p></div>
                         <div class="flex gap-4 items-center"><i class="fa-solid fa-square-caret-down text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">Café da manhã</p></div>
                         <div class="flex gap-4 items-center"><i class="fa-solid fa-minus text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">Almoço X2</p></div>
@@ -157,11 +158,12 @@
                 <!-- /PLANO 1 -->
 
                 <!-- PLANO 2 -->
-                <div class="card h-auto py-3  rounded-xl shadow-[0px_2px_8px_rgba(0,0,0,0.1)] overflow-hidden 
-                    transition-[transform_0.3s,background_0.3s,color_0.3s] relative z-0 bg-[#000000dc] flex flex-col items-center"
+                <div class="card py-3 rounded-xl shadow-[0px_2px_8px_rgba(0,0,0,0.1)] overflow-hidden 
+                    transition-[transform_0.3s,background_0.3s,color_0.3s] relative z-0 bg-[#000000dc] 
+                    flex flex-col items-center xl:h-[600px]"
                 >
-                    <div class="imagem text-3xl border-1 border-[var(--color-secondary)] rounded-full w-16 p-3 mt-2 ml-2">
-                    🛫
+                   <div class="imagem text-3xl border-1 border-[var(--color-secondary)] rounded-full w-16 p-3 mt-2 ml-2 xl:mt-12">
+                      🛫
                     </div>
                     <h3 class="text-[var(--color-primary)] m-3 font-[700] text-4xl text-left mt-6">Plano Premium</h3>
                     <p class="text-center mx-4 mb-4 text-[15.2px] text-white">Pra você que quer passar uns dias consigo mesmo.</p>
@@ -174,7 +176,7 @@
                         </button>
                     </div>
                     
-                    <div class="opcoes mx-4 mb-4 rounded-sm p-2 flex items-center flex-col gap-4 flex-1">
+                    <div class="opcoes mx-4 mb-4 rounded-sm p-2 flex items-center flex-col gap-4 ">
                         <div class="flex gap-4 items-center"><i class="fa-solid fa-person-circle-minus text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">Acomodação Mínima</p></div>
                         <div class="flex gap-4 items-center"><i class="fa-solid fa-square-caret-down text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">Café da manhã</p></div>
                         <div class="flex gap-4 items-center"><i class="fa-solid fa-minus text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">Almoço X2</p></div>
@@ -186,10 +188,11 @@
 
                 <!-- PLANO 3 -->
                 <div class="card h-auto py-3 rounded-xl shadow-[0px_2px_8px_rgba(0,0,0,0.1)] overflow-hidden 
-                    transition-[transform_0.3s,background_0.3s,color_0.3s] relative z-0 bg-[#000000dc] flex flex-col items-center"
+                    transition-[transform_0.3s,background_0.3s,color_0.3s] relative z-0 bg-[#000000dc] 
+                    flex flex-col items-center xl:mt-8"
                 >
                     <div class="imagem text-3xl border-1 border-[var(--color-secondary)] rounded-full w-16 p-3 mt-2 ml-2">
-                    🛫
+                      🛫
                     </div>
                     <h3 class="text-[var(--color-primary)] m-3 font-[700] text-4xl text-left mt-6">Plano Master</h3>
                     <p class="text-center mx-4 mb-4 text-[15.2px] text-white">Pra você que quer passar uns dias consigo mesmo.</p>
@@ -202,7 +205,7 @@
                         </button>
                     </div>
                     
-                    <div class="opcoes mx-4 mb-4 rounded-sm p-2 flex items-center flex-col gap-4 flex-1">
+                    <div class="opcoes mx-4 mb-4 rounded-sm p-2 flex items-center flex-col gap-4 ">
                         <div class="flex gap-4 items-center"><i class="fa-solid fa-person-circle-minus text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">Acomodação Mínima</p></div>
                         <div class="flex gap-4 items-center"><i class="fa-solid fa-square-caret-down text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">Café da manhã</p></div>
                         <div class="flex gap-4 items-center"><i class="fa-solid fa-minus text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">Almoço X2</p></div>
@@ -214,6 +217,7 @@
             </div>
 
         </section>
+
 
         <!-- <section class="contato py-12 px-4 max-w-8/10 m-auto" id="contato">
             <h2 class="text-center text-3xl text-[var(--color-titles)] font-[700] mb-7">Contato</h2>
