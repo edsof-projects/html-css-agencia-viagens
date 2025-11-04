@@ -23,8 +23,8 @@
 
 <body class="bg-[#f9fbfc]">
     <header
-        class="w-full bg-[var(--color-primary)] h-[70px] flex items-center justify-between px-6 relative md:fixed z-50">
-        <a href="/"><span class="text-2xl text-white font-bold whitespace-nowrap">Viagem dos Sonhos ✈️</span></a>
+        class="w-full bg-[var(--color-primary)] h-[70px] flex items-center justify-between min-[370px]:px-6 min-[320px]:px-1  relative md:fixed z-50">
+        <a href="/"><span class="min-[320px]:text-[20px] min-[370px]:text-2xl text-white font-bold whitespace-nowrap">Viagem dos Sonhos ✈️</span></a>
         <nav id="nav"
             class="w-full hidden absolute top-[100%] left-0 h-[calc(100vh-70px)] bg-gray-950 items-center justify-center md:static md:!flex md:!flex-row md:h-[70px] md:!top-0 md:bg-inherit">
             <ul class="flex flex-col md:flex-row md:gap-2">
@@ -47,11 +47,11 @@
         </nav>
         <div class="flex items-center gap-2">
             <span class="text-2xl cursor-pointer">🌙</span>
-            <i class="fa-solid fa-bars text-white font-bold text-[28px] md:!hidden" id="hamburger"></i>
+            <i class="fa-solid fa-bars text-white font-bold min-[370px]:text-[26px] min-[320px]:text-[20px]  md:!hidden" id="hamburger"></i>
         </div>
     </header>
     <main>
-        <section id="inicio" class="hero bg-[url('img/hero.jpg')] bg-cover bg-center bg-no-repeat w-full h-auto flex items-center 
+        <section id="inicio" class="hero bg-[url('img/hero.png')] bg-cover bg-center bg-no-repeat w-full h-auto flex items-center 
                 justify-center flex-col p-16 xl:h-[600px] md:p-30">
             <h1 class="text-white text-[32px] text-center font-semibold leading-[45px] mb-5 max-w-sm mx-auto
                 md:text-[50px] md:leading-[55px] xl:text-[60px] xl:leading-[65px] xl:max-w-3xl">
@@ -60,8 +60,9 @@
             <p class="text-center text-white text-[17.6px] max-w-sm mx-auto">Viaje pelo mundo com conforto e
                 economia.Viva experiências<br> inesquecíveis</p>
             <a href="#" type="button"
-                class="bg-[var(--color-secondary)] py-3 px-6 rounded-md text-md mt-8 hover:bg-[#2e2e2e] hover:text-[white] transition-all duration-100 ease-in border-[3px] border-transparent hover:shadow-[0_0_0_3px_rgba(255,204,0,1)] ">Explorar
-                agora</a>
+                class="bg-[var(--color-primary)] text-[var(--color-neutral-0)] py-3 px-6 lg:px-16 rounded-[25px] text-md mt-8 border-2 hover:bg-[#004b7c]  hover:text-[white] transition-all duration-100 ease-in font-semibold ">
+                Explorar agora
+            </a>
         </section>
 
         <section class="destinos py-12 px-4 max-w-8/10 m-auto" id="destinos">
@@ -71,29 +72,35 @@
 
                 <div
                     class="card w-full h-[330px] rounded-xl shadow-[0px_2px_8px_rgba(0,0,0,0.1)] overflow-hidden transition-[transform_0.3s,background_0.3s,color_0.3s] hover:scale-[1.03] cursor-pointer">
-                    <img src="./img/cards/praia.jpg" alt="imagem praia" class="w-full h-44 object-cover">
-                    <h3 class="text-[var(--color-primary)] m-3 font-[700] text-[18.72px] text-center mt-6">Praia dos
-                        Sonhos</h3>
-                    <p class="text-center mx-4 mb-4 text-[15.2px]">Areia branca, mar cristalino e o pôr do sol mais
-                        bonito do mundo.</p>
-                </div>
-
-                <div
-                    class="card w-full h-[330px] rounded-xl shadow-[0px_2px_8px_rgba(0,0,0,0.1)] overflow-hidden transition-[transform_0.3s,background_0.3s,color_0.3s] hover:scale-[1.03] cursor-pointer">
-                    <img src="./img/cards/montanha.jpg" alt="imagem montanha" class="w-full h-44 object-cover">
-                    <h3 class="text-[var(--color-primary)] m-3 font-[700] text-[18.72px] text-center mt-6">Montanhas
-                        Encantadas</h3>
-                    <p class="text-center mx-4 mb-4 text-[15.2px]">Um refúgio perfeito para quem ama natureza e
-                        aventura.</p>
-                </div>
-
-                <div
-                    class="card w-full h-[330px] rounded-xl shadow-[0px_2px_8px_rgba(0,0,0,0.1)] overflow-hidden transition-[transform_0.3s,background_0.3s,color_0.3s] hover:scale-[1.03] cursor-pointer">
-                    <img src="./img/cards/cultura.jpg" alt="imagem cultura" class="w-full h-44 object-cover">
-                    <h3 class="text-[var(--color-primary)] m-3 font-[700] text-[18.72px] text-center mt-6">Cidade Luz
+                    <img src="./img/cards/inglaterra.png" alt="imagem praia" class="w-full h-44 object-cover">
+                    <h3 class="text-[var(--color-primary)] m-3 font-[700] text-[18.72px] text-center mt-6">
+                        Inglaterra
                     </h3>
-                    <p class="text-center mx-4 mb-4 text-[15.2px]">Cultura, gastronomia e romance nas ruas mais
-                        charmosas do mundo.</p>
+                    <p class="text-center mx-4 mb-4 text-[15.2px]">
+                        Londres, sua capital, abriga ícones como o Big Ben, a Tower Bridge e o Palácio de Buckingham.
+                    </p>
+                </div>
+
+                <div
+                    class="card w-full h-[330px] rounded-xl shadow-[0px_2px_8px_rgba(0,0,0,0.1)] overflow-hidden transition-[transform_0.3s,background_0.3s,color_0.3s] hover:scale-[1.03] cursor-pointer">
+                    <img src="./img/cards/franca.png" alt="imagem montanha" class="w-full h-44 object-cover">
+                    <h3 class="text-[var(--color-primary)] m-3 font-[700] text-[18.72px] text-center mt-6">
+                        França
+                    </h3>
+                    <p class="text-center mx-4 mb-4 text-[15.2px]">
+                        Cidade Luz, Cultura, gastronomia e romance nas ruas mais charmosas do mundo..
+                    </p>
+                </div>
+
+                <div
+                    class="card w-full h-[330px] rounded-xl shadow-[0px_2px_8px_rgba(0,0,0,0.1)] overflow-hidden transition-[transform_0.3s,background_0.3s,color_0.3s] hover:scale-[1.03] cursor-pointer">
+                    <img src="./img/cards/italia.png" alt="imagem cultura" class="w-full h-44 object-cover">
+                    <h3 class="text-[var(--color-primary)] m-3 font-[700] text-[18.72px] text-center mt-6">
+                        Itália
+                    </h3>
+                    <p class="text-center mx-4 mb-4 text-[15.2px]">
+                        A Itália é sinônimo de arte, beleza e gastronomia, um país onde cada cidade carrega séculos de história e cultura.
+                    </p>
                 </div>
 
             </div>
@@ -106,17 +113,29 @@
             <div class="galeria grid grid-cols-[repeat(auto-fit,minmax(250px,2fr))] gap-6 mt-8 ">
 
                 <div class="flex items-center justify-center gap-2 flex-wrap">
-                    <img src="./img/galeria/foto1.JPG" alt="imagem praia"
+                    <img src="./img/galeria/foto1.png" alt="imagem praia"
                         class="foto cursor-pointer w-[500px] rounded-lg shadow-md" id="id-foto">
-                    <img src="./img/galeria/foto2.JPG" alt="imagem praia"
+                    <img src="./img/galeria/foto2.png" alt="imagem praia"
                         class="foto cursor-pointer w-[500px] rounded-lg shadow-md" id="id-foto">
-                    <img src="./img/galeria/foto3.JPG" alt="imagem praia"
+                    <img src="./img/galeria/foto3.png" alt="imagem praia"
                         class="foto cursor-pointer w-[500px] rounded-lg shadow-md" id="id-foto">
-                    <img src="./img/galeria/foto4.JPG" alt="imagem praia"
+                    <img src="./img/galeria/foto4.png" alt="imagem praia"
                         class="foto cursor-pointer w-[500px] rounded-lg shadow-md" id="id-foto">
-                    <img src="./img/galeria/foto5.JPG" alt="imagem praia"
+                    <img src="./img/galeria/foto5.png" alt="imagem praia"
                         class="foto cursor-pointer w-[500px] rounded-lg shadow-md" id="id-foto">
-                    <img src="./img/galeria/foto6.JPG" alt="imagem praia"
+                    <img src="./img/galeria/foto6.png" alt="imagem praia"
+                        class="foto cursor-pointer w-[500px] rounded-lg shadow-md" id="id-foto">
+                    <img src="./img/galeria/foto7.png" alt="imagem praia"
+                        class="foto cursor-pointer w-[500px] rounded-lg shadow-md" id="id-foto">
+                    <img src="./img/galeria/foto8.png" alt="imagem praia"
+                        class="foto cursor-pointer w-[500px] rounded-lg shadow-md" id="id-foto">
+                    <img src="./img/galeria/foto9.png" alt="imagem praia"
+                        class="foto cursor-pointer w-[500px] rounded-lg shadow-md" id="id-foto">
+                    <img src="./img/galeria/foto10.png" alt="imagem praia"
+                        class="foto cursor-pointer w-[500px] rounded-lg shadow-md" id="id-foto">
+                    <img src="./img/galeria/foto11.png" alt="imagem praia"
+                        class="foto cursor-pointer w-[500px] rounded-lg shadow-md" id="id-foto">
+                    <img src="./img/galeria/foto12.png" alt="imagem praia"
                         class="foto cursor-pointer w-[500px] rounded-lg shadow-md" id="id-foto">
                 </div>
 
@@ -151,7 +170,7 @@
                         <div class="flex gap-4 items-center"><i class="fa-solid fa-person-circle-minus text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">Acomodação Mínima</p></div>
                         <div class="flex gap-4 items-center"><i class="fa-solid fa-square-caret-down text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">Café da manhã</p></div>
                         <div class="flex gap-4 items-center"><i class="fa-solid fa-minus text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">Almoço X2</p></div>
-                        <div class="flex gap-4 items-center"><i class="fa-solid fa-heart-circle-minus text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">Passeio matinal</p></div>
+                        <div class="flex gap-4 items-center"><i class="fa-solid fa-heart-circle-minus text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">Passeio matinal/Dunas</p></div>
                         <div class="flex gap-4 items-center"><i class="fa-solid fa-comment-nodes text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">AquaIoga</p></div>                        
                     </div>
                 </div>      
@@ -160,7 +179,7 @@
                 <!-- PLANO 2 -->
                 <div class="card py-3 rounded-xl shadow-[0px_2px_8px_rgba(0,0,0,0.1)] overflow-hidden 
                     transition-[transform_0.3s,background_0.3s,color_0.3s] relative z-0 bg-[#000000dc] 
-                    flex flex-col items-center xl:h-[600px]"
+                    flex flex-col items-center xl:h-[580px]"
                 >
                    <div class="imagem text-3xl border-1 border-[var(--color-secondary)] rounded-full w-16 p-3 mt-2 ml-2 xl:mt-12">
                       🛫
@@ -177,10 +196,10 @@
                     </div>
                     
                     <div class="opcoes mx-4 mb-4 rounded-sm p-2 flex items-center flex-col gap-4 ">
-                        <div class="flex gap-4 items-center"><i class="fa-solid fa-person-circle-minus text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">Acomodação Mínima</p></div>
-                        <div class="flex gap-4 items-center"><i class="fa-solid fa-square-caret-down text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">Café da manhã</p></div>
-                        <div class="flex gap-4 items-center"><i class="fa-solid fa-minus text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">Almoço X2</p></div>
-                        <div class="flex gap-4 items-center"><i class="fa-solid fa-heart-circle-minus text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">Passeio matinal</p></div>
+                        <div class="flex gap-4 items-center"><i class="fa-solid fa-person-circle-minus text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">Acomodação Premium</p></div>
+                        <div class="flex gap-4 items-center"><i class="fa-solid fa-square-caret-down text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">Café da manhã/Almoço</p></div>
+                        <div class="flex gap-4 items-center"><i class="fa-solid fa-minus text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">Almoço X3</p></div>
+                        <div class="flex gap-4 items-center"><i class="fa-solid fa-heart-circle-minus text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">Passeio/Academia</p></div>
                         <div class="flex gap-4 items-center"><i class="fa-solid fa-comment-nodes text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">AquaIoga</p></div>                        
                     </div>
                 </div>      
@@ -206,10 +225,10 @@
                     </div>
                     
                     <div class="opcoes mx-4 mb-4 rounded-sm p-2 flex items-center flex-col gap-4 ">
-                        <div class="flex gap-4 items-center"><i class="fa-solid fa-person-circle-minus text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">Acomodação Mínima</p></div>
-                        <div class="flex gap-4 items-center"><i class="fa-solid fa-square-caret-down text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">Café da manhã</p></div>
-                        <div class="flex gap-4 items-center"><i class="fa-solid fa-minus text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">Almoço X2</p></div>
-                        <div class="flex gap-4 items-center"><i class="fa-solid fa-heart-circle-minus text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">Passeio matinal</p></div>
+                        <div class="flex gap-4 items-center"><i class="fa-solid fa-person-circle-minus text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">Acomodação Máxima</p></div>
+                        <div class="flex gap-4 items-center"><i class="fa-solid fa-square-caret-down text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">Swit Master</p></div>
+                        <div class="flex gap-4 items-center"><i class="fa-solid fa-minus text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">Café/Almoço/Janta X5</p></div>
+                        <div class="flex gap-4 items-center"><i class="fa-solid fa-heart-circle-minus text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">Passeio/Academia/Guia Turístico</p></div>
                         <div class="flex gap-4 items-center"><i class="fa-solid fa-comment-nodes text-2xl text-[var(--color-primary)]"></i><p class="font-semibold text-[16px] text-white ">AquaIoga</p></div>                        
                     </div>
                 </div>   
@@ -248,18 +267,18 @@
         </section> -->
 
     </main>
-    <footer class="w-full p-4 flex items-center justify-center bg-[var(--color-primary)]">
+    <footer class="w-full p-4 flex items-center justify-center bg-[var(--color-primary)] ">
         <div class="copy text-white text-center">© 2025 Viagem dos Sonhos <br> Todos os direitos reservados a Edsof
             Informática.</div>
     </footer>
 
     <!-- MODAL -->
-    <div id="modal" class="fixed inset-0 bg-black/70 hidden items-center justify-center z-50">
+    <div id="modal" class="fixed inset-0 bg-black/90 hidden items-center justify-center z-50">
         <div class="relative">
             <img id="modal-img" class="max-w-[90vw] max-h-[90vh] rounded-lg shadow-lg">
 
             <!-- botão fechar -->
-            <button id="close-modal" class="absolute top-2 right-2 text-white text-3xl cursor-pointer">
+            <button id="close-modal" class="absolute top-2 right-2 text-[var(--color-secondary)] hover:text-[var(--color-neutral-0)] text-3xl cursor-pointer">
                 &times;
             </button>
         </div>
