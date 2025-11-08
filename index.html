@@ -24,8 +24,8 @@
 <body class="bg-[#f9fbfc]">
     <header
         class="w-full bg-[var(--color-primary)] h-[70px] flex items-center justify-between min-[370px]:px-6 min-[320px]:px-1  relative md:fixed z-50">
-        <a href="/"><span
-                class="min-[320px]:text-[20px] min-[370px]:text-2xl text-white font-bold whitespace-nowrap">Viagem dos
+        <a href="#inicio"><span
+                class="min-[320px]:text-[20px] min-[370px]:text-2xl text-white font-bold whitespace-nowrap hover:text-[var(--color-secondary)]">Viagem dos
                 Sonhos ✈️</span></a>
         <nav id="nav"
             class="w-full hidden absolute top-[100%] left-0 h-[calc(100vh-70px)] bg-gray-950 items-center justify-center md:static md:!flex md:!flex-row md:h-[70px] md:!top-0 md:bg-inherit">
@@ -55,7 +55,7 @@
     </header>
     <main>
         <section id="inicio" class="hero bg-[url('img/hero.png')] bg-cover bg-center bg-no-repeat w-full h-auto flex items-center 
-                justify-center flex-col p-16 xl:h-[600px] md:p-30">
+                justify-center flex-col p-16 xl:h-[600px] md:p-30 bg-black/50 bg-blend-darken">
             <h1 class="text-white text-[32px] text-center font-semibold leading-[45px] mb-5 max-w-sm mx-auto
                 md:text-[50px] md:leading-[55px] xl:text-[60px] xl:leading-[65px] xl:max-w-3xl">
                 Descubra novos destinos incríveis
@@ -63,7 +63,7 @@
             <p class="text-center text-white text-[17.6px] max-w-sm mx-auto">Viaje pelo mundo com conforto e
                 economia.Viva experiências<br> inesquecíveis</p>
             <a href="#" type="button"
-                class="bg-[var(--color-primary)] text-[var(--color-neutral-0)] py-3 px-6 lg:px-16 rounded-[25px] text-md mt-8 border-2 hover:bg-[#004b7c]  hover:text-[white] transition-all duration-100 ease-in font-semibold ">
+                class="bg-[var(--color-primary)] text-[var(--color-neutral-0)] hover:bg-[#004b7c]  hover:text-[white] py-3 px-6 lg:px-16 rounded-[25px] text-md mt-8 border-2 transition-all duration-100 ease-in font-semibold ">
                 Explorar agora
             </a>
         </section>
@@ -155,19 +155,19 @@
                 <!-- PLANO 1 -->
                 <div class="card h-auto py-3 rounded-xl shadow-[0px_2px_8px_rgba(0,0,0,0.1)] overflow-hidden 
                     transition-[transform_0.3s,background_0.3s,color_0.3s] relative z-0 bg-[#000000dc] 
-                    flex flex-col items-center xl:mt-8">
+                    flex flex-col items-center xl:mt-8 md:hover:scale-105">
                     <div
                         class="imagem text-3xl border-1 border-[var(--color-secondary)] rounded-full w-16 p-3 mt-2 ml-2">
                         🛫
                     </div>
-                    <h3 class="text-[var(--color-primary)] m-3 font-[700] text-4xl text-left mt-6">Plano Básico</h3>
+                    <h3 class="text-orange-400 m-3 font-[700] text-4xl text-left mt-6">Plano Básico</h3>
                     <p class="text-center mx-4 mb-4 text-[15.2px] text-white">Pra você que quer passar uns dias consigo
                         mesmo.</p>
                     <p class="text-left text-white text-4xl mx-4 mb-4">R$ 1850,00</p>
 
                     <div class="center">
-                        <button class=" py-2 px-8 mx-16 bg-[var(--color-secondary)] rounded-md cursor-pointer hover:bg-[var(--color-tercery)] 
-                            text-[var(--color-gray-dark)] hover:text-black font-bold">
+                        <button class=" py-2 px-8 mx-16 rounded-md cursor-pointer font-bold bg-[var(--color-primary)] text-[var(--color-neutral-0)] 
+                        border border-transparent hover:bg-[#004b7c]  hover:text-[white] hover:border-white">
                             Ver Plano
                         </button>
                     </div>
@@ -200,19 +200,18 @@
                 <!-- PLANO 2 -->
                 <div class="card py-3 rounded-xl shadow-[0px_2px_8px_rgba(0,0,0,0.1)] overflow-hidden 
                     transition-[transform_0.3s,background_0.3s,color_0.3s] relative z-0 bg-[#000000dc] 
-                    flex flex-col items-center xl:h-[580px]">
+                    flex flex-col items-center xl:h-[580px] md:hover:scale-105">
                     <div
                         class="imagem text-3xl border-1 border-[var(--color-secondary)] rounded-full w-16 p-3 mt-2 ml-2 xl:mt-12">
                         🛫
                     </div>
-                    <h3 class="text-[var(--color-primary)] m-3 font-[700] text-4xl text-center mt-6">Plano Premium</h3>
-                    <p class="text-center mx-4 mb-4 text-[15.2px] text-white">Pra você que quer passar uns dias consigo
-                        mesmo.</p>
+                    <h3 class="text-orange-400 m-3 font-[700] text-4xl text-center mt-6">Plano Premium</h3>
+                    <p class="text-center mx-4 mb-4 text-[15.2px] text-white">Pra você que quer passar uns dias com a família.</p>
                     <p class="text-left text-white text-4xl mx-4 mb-4">R$ 2350,00</p>
 
                     <div class="center">
-                        <button class=" py-2 px-8 mx-16 bg-[var(--color-secondary)] rounded-md cursor-pointer hover:bg-[var(--color-tercery)] 
-                            text-[var(--color-gray-dark)] hover:text-black font-bold">
+                        <button class=" py-2 px-8 mx-16 rounded-md cursor-pointer font-bold bg-[var(--color-primary)] text-[var(--color-neutral-0)] 
+                        border border-transparent hover:bg-[#004b7c]  hover:text-[white] hover:border-white">
                             Ver Plano
                         </button>
                     </div>
@@ -245,19 +244,18 @@
                 <!-- PLANO 3 -->
                 <div class="card h-auto py-3 rounded-xl shadow-[0px_2px_8px_rgba(0,0,0,0.1)] overflow-hidden 
                     transition-[transform_0.3s,background_0.3s,color_0.3s] relative z-0 bg-[#000000dc] 
-                    flex flex-col items-center xl:mt-8">
+                    flex flex-col items-center xl:mt-8 md:hover:scale-105">
                     <div
                         class="imagem text-3xl border-1 border-[var(--color-secondary)] rounded-full w-16 p-3 mt-2 ml-2">
                         🛫
                     </div>
-                    <h3 class="text-[var(--color-primary)] m-3 font-[700] text-4xl text-left mt-6">Plano Master</h3>
-                    <p class="text-center mx-4 mb-4 text-[15.2px] text-white">Pra você que quer passar uns dias consigo
-                        mesmo.</p>
+                    <h3 class="text-orange-400 m-3 font-[700] text-4xl text-left mt-6">Plano Master</h3>
+                    <p class="text-center mx-4 mb-4 text-[15.2px] text-white">Pra você que quer passar uns dias com alguém especial.</p>
                     <p class="text-left text-white text-4xl mx-4 mb-4">R$ 3260,00</p>
 
                     <div class="center">
-                        <button class=" py-2 px-8 mx-16 bg-[var(--color-secondary)] rounded-md cursor-pointer hover:bg-[var(--color-tercery)] 
-                            text-[var(--color-gray-dark)] hover:text-black font-bold">
+                        <button class=" py-2 px-8 mx-16 rounded-md cursor-pointer font-bold bg-[var(--color-primary)] text-[var(--color-neutral-0)] 
+                        border border-transparent hover:bg-[#004b7c]  hover:text-[white] hover:border-white">
                             Ver Plano
                         </button>
                     </div>
@@ -290,7 +288,7 @@
 
         </section>
 
-        <section class="contato w-full sm:py-3 md:py-8 m-auto md:max-w-8/10 " id="contato">    
+        <section class="contato w-full py-5 md:py-8 m-auto md:max-w-8/10" id="contato">    
             <div class="flex flex-col w-full p-3">
                 <h2 class="text-center text-3xl text-[var(--color-titles)] font-[700] mb-7">Contato</h2>
 
@@ -319,7 +317,8 @@
                                 </div>
                             </div>
                             <div class="area-button w-full">
-                                <button class="w-full p-2 rounded-lg bg-[var(--color-primary)] text-white text-xl font-semibold md:hover:bg-[var(--color-hover-btn)] cursor-pointer" type="button">Enviar</button>
+                                <button class="w-1/4 p-2 rounded-lg bg-[var(--color-primary)] text-white text-xl font-semibold 
+                                border border-transparent hover:bg-[#004b7c]  hover:text-[white] hover:border-white cursor-pointer" type="button">Enviar</button>
                             </div>
                         </form>
                     </div>
