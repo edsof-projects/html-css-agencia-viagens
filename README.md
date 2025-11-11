@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  <img alt="" src=".github/preview-desktop.png" width="100%">
+  <img alt="" src="./github/preview-desktop.png" width="100%">
 </p>
 
 <p align="center">
@@ -13,15 +13,11 @@
 </p>
 
 <p align="center">
- <img  src="./github/mit.svg" alt="License">
-  
-  <img src="./github/forks.svg" alt="Forks">
-
-  <img src="./github/stars.svg" alt="Stars">
+ <img  src="https://img.shields.io/static/v1?label=license&message=MIT&color=0099CC&labelColor=FFCC00" alt="License">
 </p>
 
 <p align="center">
-  <img alt="" src=".github/logo-plane.png" width="10%">
+  <img alt="" src="./github/logo-plane.png" width="20%">
 </p>
 
 <br>
@@ -52,4 +48,7 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 ---
 
-Feito com ♥ by edsof informática
+Todos os direitos reservados a [edsof informática]
+<p align="left">
+  <img alt="" src="./github/logo_Edsof.png" width="10%">
+</p>
