@@ -36,6 +36,11 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 🚧 Projeto:
 
+Link do projeto publicado :[https://edsof-agencia-viagens.netlify.app/]
+
+Link do repositório       :[https://github.com/edsof-projects/html-css-agencia-viagens]
+
+## ✅ Status:
 Em construção
 
 ## 🎨 Inspiração:
