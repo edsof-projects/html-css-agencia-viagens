@@ -44,7 +44,7 @@ Em construção
 
 ## 🎨 Inspiração:
 
-Youtube - Canal <a target="_blank" href="https://www.youtube.com/@DesvendandooCodigo">@DesvendandooCodigo</a>
+Youtube - Canal <a href="https://www.youtube.com/@DesvendandooCodigo" target="_blank">@DesvendandooCodigo</a>
 
 ## :memo: Licença
 
