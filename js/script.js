@@ -1,5 +1,5 @@
-import { scrollSmoot } from './scrollSmoot.js';
-import { modal } from './modal.js';
+import { scrollSmoot }  from './scrollSmoot.js';
+import { modal }        from './modal.js';
 
 const menu = document.querySelector('#hamburger')
 const nav  = document.querySelector('#nav')
