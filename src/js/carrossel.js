@@ -1,9 +1,8 @@
-// ./js/carousel.js
 document.addEventListener('DOMContentLoaded', () => {
   const carousel = document.getElementById('carousel');
-  const prevBtn = document.getElementById('prevBtn');
-  const nextBtn = document.getElementById('nextBtn');
-  const wrapper = document.getElementById('carousel-wrapper');
+  const prevBtn  = document.getElementById('prevBtn');
+  const nextBtn  = document.getElementById('nextBtn');
+  const wrapper  = document.getElementById('carousel-wrapper');
 
   if (!carousel || !prevBtn || !nextBtn || !wrapper) {
     console.error('Carousel: elemento(s) não encontrado(s). Verifique IDs.');
@@ -11,18 +10,19 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Setup inicial
-  const slides = Array.from(carousel.children);
+  const slides      = Array.from(carousel.children);
   const totalSlides = slides.length;
   if (totalSlides === 0) return;
 
-  let index = 1; // vamos posicionar no primeiro slide "real"
-  const delay = 2000;
-  const transitionMs = 800;
-  let intervalId = null;
+  // vamos posicionar no primeiro slide "real"  
+  let index          = 1;     
+  const delay        = 3000;
+  const transitionMs = 1500;
+  let intervalId     = null;
 
   // Cria clones (lastClone antes, firstClone depois)
   const firstClone = slides[0].cloneNode(true);
-  const lastClone = slides[slides.length - 1].cloneNode(true);
+  const lastClone  = slides[slides.length - 1].cloneNode(true);
   carousel.insertBefore(lastClone, carousel.firstChild);
   carousel.appendChild(firstClone);
 
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Função para mover
   function goTo(i) {
     carousel.style.transition = `transform ${transitionMs}ms ease-in-out`;
-    carousel.style.transform = `translateX(-${i * 100}%)`;
+    carousel.style.transform  = `translateX(-${i * 100}%)`;
   }
 
   // Ajuste ao terminar a transição (loop suave)

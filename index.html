@@ -4,18 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./public/favicon.png">
 
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/e08f3fd03f.js" crossorigin="anonymous"></script>
 
     <!-- JS -->
-    <script type="module" src="./js/script.js" defer></script>
-    <script type="module" src="./js/carrossel.js" defer></script>
-
+    <script type="module" src="./src/js/script.js"    defer></script>
+    <script type="module" src="./src/js/carrossel.js" defer></script>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./src/css/global.css">
 
     <!-- Tailwind -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -36,17 +37,20 @@
                 <li class="p-2 text-center link"><a href="#inicio"
                         class="text-[var(--color-secondary)] text-[23px] md:text-[17px] md:hover:underline decoration-orange-400 decoration-3 md:text-white">Início</a>
                 </li>
+                <li class="p-2 text-center link"><a href="#carousel-wrapper"
+                        class="text-[var(--color-secondary)] text-[23px] md:text-[17px] md:hover:underline  decoration-orange-400 decoration-3 md:text-white">Serviços</a>
+                </li>
                 <li class="p-2 text-center link"><a href="#destinos" id="link-destinos"
                         class="text-[var(--color-secondary)] text-[23px] md:text-[17px] md:hover:underline  decoration-orange-400 decoration-3 md:text-white">Destinos</a>
                 </li>
                 <li class="p-2 text-center link"><a href="#galeria"
                         class="text-[var(--color-secondary)] text-[23px] md:text-[17px] md:hover:underline  decoration-orange-400 decoration-3 md:text-white">Galeria</a>
-                </li>
-                <li class="p-2 text-center link"><a href="#carousel-wrapper"
-                        class="text-[var(--color-secondary)] text-[23px] md:text-[17px] md:hover:underline  decoration-orange-400 decoration-3 md:text-white">Serviços</a>
-                </li>
+                </li>                
                 <li class="p-2 text-center link"><a href="#promocoes" id="link-promocoes"
                         class="text-[var(--color-secondary)] text-[23px] md:text-[17px] md:hover:underline  decoration-orange-400 decoration-3 md:text-white">Promoções</a>
+                </li>
+                <li class="p-2 text-center link"><a href="#parcerias" id="link-parcerias"
+                        class="text-[var(--color-secondary)] text-[23px] md:text-[17px] md:hover:underline  decoration-orange-400 decoration-3 md:text-white">Parcerias</a>
                 </li>
                 <li class="p-2 text-center link"><a href="#contato"
                         class="text-[var(--color-secondary)] text-[23px] md:text-[17px] md:hover:underline  decoration-orange-400 decoration-3 md:text-white">Contato</a>
@@ -61,7 +65,7 @@
     </header>
     <main>
 
-        <section id="inicio" class="hero bg-[url('img/hero.png')] bg-cover bg-center bg-no-repeat w-full h-auto flex items-center 
+        <section id="inicio" class="hero bg-[url('./src/assets/hero.png')] bg-cover bg-center bg-no-repeat w-full h-auto flex items-center 
                 justify-center flex-col p-16 xl:h-[600px] md:p-30 bg-black/50 bg-blend-darken">
             <h1 class="text-white text-[32px] text-center font-semibold leading-[45px] mb-5 max-w-sm mx-auto
                 md:text-[50px] md:leading-[55px] xl:text-[60px] xl:leading-[65px] xl:max-w-3xl">
@@ -76,14 +80,14 @@
         </section>
 
         <section class="servicos relative overflow-hidden w-full  m-auto mt-12 px-16 md:px-24 lg:px-32 xl:px-40 " id="carousel-wrapper">
-            <h2 class="text-center text-3xl text-[var(--color-titles)] font-[700] mb-7">Serviços</h2>
+            <h2 class="text-center text-3xl text-[var(--color-titles)] font-[700] mb-7">Serviços VIP</h2>
 
             <div class="relative overflow-hidden w-full max-w-[1500px] mx-auto" id="carousel-wrapper">
                 <div id="carousel" class="flex transition-transform duration-700 ease-in-out">
-                    <img src="./img/servicos/img1.png" alt="1" class="w-full flex-shrink-0 object-cover rounded-2xl md:h-[500px]">
-                    <img src="./img/servicos/img2.png" alt="2" class="w-full flex-shrink-0 object-cover rounded-2xl md:h-[500px]">
-                    <img src="./img/servicos/img3.png" alt="3" class="w-full flex-shrink-0 object-cover rounded-2xl md:h-[500px]">
-                    <img src="./img/servicos/img4.png" alt="4" class="w-full flex-shrink-0 object-cover rounded-2xl md:h-[500px]">
+                    <img src="./src/assets/servicos/img1.png" alt="1" class="w-full flex-shrink-0 object-cover rounded-2xl md:h-[500px]">
+                    <img src="./src/assets/servicos/img2.png" alt="2" class="w-full flex-shrink-0 object-cover rounded-2xl md:h-[500px]">
+                    <img src="./src/assets/servicos/img3.png" alt="3" class="w-full flex-shrink-0 object-cover rounded-2xl md:h-[500px]">
+                    <img src="./src/assets/servicos/img4.png" alt="4" class="w-full flex-shrink-0 object-cover rounded-2xl md:h-[500px]">
                 </div>
 
                 <button id="prevBtn"
@@ -104,7 +108,7 @@
 
                 <div
                     class="card w-full h-[330px] rounded-xl shadow-[0px_2px_8px_rgba(0,0,0,0.1)] overflow-hidden transition-[transform_0.3s,background_0.3s,color_0.3s] hover:scale-[1.03] cursor-pointer">
-                    <img src="./img/cards/inglaterra.png" alt="imagem praia" class="w-full h-44 object-cover">
+                    <img src="./src/assets/cards/inglaterra.png" alt="imagem praia" class="w-full h-44 object-cover">
                     <h3 class="text-[var(--color-primary)] m-3 font-[700] text-[18.72px] text-center mt-6">
                         Inglaterra
                     </h3>
@@ -115,7 +119,7 @@
 
                 <div
                     class="card w-full h-[330px] rounded-xl shadow-[0px_2px_8px_rgba(0,0,0,0.1)] overflow-hidden transition-[transform_0.3s,background_0.3s,color_0.3s] hover:scale-[1.03] cursor-pointer">
-                    <img src="./img/cards/franca.png" alt="imagem montanha" class="w-full h-44 object-cover">
+                    <img src="./src/assets/cards/franca.png" alt="imagem montanha" class="w-full h-44 object-cover">
                     <h3 class="text-[var(--color-primary)] m-3 font-[700] text-[18.72px] text-center mt-6">
                         França
                     </h3>
@@ -126,7 +130,7 @@
 
                 <div
                     class="card w-full h-[330px] rounded-xl shadow-[0px_2px_8px_rgba(0,0,0,0.1)] overflow-hidden transition-[transform_0.3s,background_0.3s,color_0.3s] hover:scale-[1.03] cursor-pointer">
-                    <img src="./img/cards/italia.png" alt="imagem cultura" class="w-full h-44 object-cover">
+                    <img src="./src/assets/cards/italia.png" alt="imagem cultura" class="w-full h-44 object-cover">
                     <h3 class="text-[var(--color-primary)] m-3 font-[700] text-[18.72px] text-center mt-6">
                         Itália
                     </h3>
@@ -146,29 +150,29 @@
             <div class="galeria grid grid-cols-[repeat(auto-fit,minmax(250px,2fr))] gap-6 mt-8 ">
 
                 <div class="flex items-center justify-center gap-2 flex-wrap">
-                    <img src="./img/galeria/foto1.png" alt="imagem praia"
+                    <img src="./src/assets/galeria/foto1.png" alt="imagem praia"
                         class="foto cursor-pointer w-[500px] rounded-lg shadow-md" id="id-foto">
-                    <img src="./img/galeria/foto2.png" alt="imagem praia"
+                    <img src="./src/assets/galeria/foto2.png" alt="imagem praia"
                         class="foto cursor-pointer w-[500px] rounded-lg shadow-md" id="id-foto">
-                    <img src="./img/galeria/foto3.png" alt="imagem praia"
+                    <img src="./src/assets/galeria/foto3.png" alt="imagem praia"
                         class="foto cursor-pointer w-[500px] rounded-lg shadow-md" id="id-foto">
-                    <img src="./img/galeria/foto4.png" alt="imagem praia"
+                    <img src="./src/assets/galeria/foto4.png" alt="imagem praia"
                         class="foto cursor-pointer w-[500px] rounded-lg shadow-md" id="id-foto">
-                    <img src="./img/galeria/foto5.png" alt="imagem praia"
+                    <img src="./src/assets/galeria/foto5.png" alt="imagem praia"
                         class="foto cursor-pointer w-[500px] rounded-lg shadow-md" id="id-foto">
-                    <img src="./img/galeria/foto6.png" alt="imagem praia"
+                    <img src="./src/assets/galeria/foto6.png" alt="imagem praia"
                         class="foto cursor-pointer w-[500px] rounded-lg shadow-md" id="id-foto">
-                    <img src="./img/galeria/foto7.png" alt="imagem praia"
+                    <img src="./src/assets/galeria/foto7.png" alt="imagem praia"
                         class="foto cursor-pointer w-[500px] rounded-lg shadow-md" id="id-foto">
-                    <img src="./img/galeria/foto8.png" alt="imagem praia"
+                    <img src="./src/assets/galeria/foto8.png" alt="imagem praia"
                         class="foto cursor-pointer w-[500px] rounded-lg shadow-md" id="id-foto">
-                    <img src="./img/galeria/foto9.png" alt="imagem praia"
+                    <img src="./src/assets/galeria/foto9.png" alt="imagem praia"
                         class="foto cursor-pointer w-[500px] rounded-lg shadow-md" id="id-foto">
-                    <img src="./img/galeria/foto10.png" alt="imagem praia"
+                    <img src="./src/assets/galeria/foto10.png" alt="imagem praia"
                         class="foto cursor-pointer w-[500px] rounded-lg shadow-md" id="id-foto">
-                    <img src="./img/galeria/foto11.png" alt="imagem praia"
+                    <img src="./src/assets/galeria/foto11.png" alt="imagem praia"
                         class="foto cursor-pointer w-[500px] rounded-lg shadow-md" id="id-foto">
-                    <img src="./img/galeria/foto12.png" alt="imagem praia"
+                    <img src="./src/assets/galeria/foto12.png" alt="imagem praia"
                         class="foto cursor-pointer w-[500px] rounded-lg shadow-md" id="id-foto">
                 </div>
 
@@ -176,8 +180,7 @@
 
         </section>
 
-        <section
-            class="promocoes py-[32px] px-3 m-auto h-auto flex flex-col items-center justify-center gap-8 place-items-center"
+        <section class="promocoes py-[32px] px-3 m-auto h-auto flex flex-col items-center justify-center gap-8 place-items-center"
             id="promocoes">
             <h2 class="text-center text-3xl text-[var(--color-titles)] font-[700] ">Promoções</h2>
 
@@ -320,13 +323,26 @@
 
         </section>
 
+        <section class="parcerias mb-0 py-2 px-4 relative" id="parcerias">
+            <h2 class="text-center text-3xl text-[var(--color-titles)] font-[700] mb-7">Parcerias</h2>
+
+            <div class="galeria grid grid-cols-[repeat(auto-fit,minmax(250px,2fr))] gap-6 mt-8 ">
+
+                <div class="flex items-center justify-center gap-2 flex-wrap">
+                    
+                </div>
+
+            </div>
+
+        </section>
+
         <section class="contato w-full py-5 md:py-8 m-auto md:max-w-8/10" id="contato">
             <div class="flex flex-col w-full p-3">
                 <h2 class="text-center text-3xl text-[var(--color-titles)] font-[700] mb-7">Contato</h2>
 
                 <div class="flex">
                     <div
-                        class="form-image bg-[url('img/hero.png')] opacity-90 md:w-1/2 bg-cover bg-center w-full  hidden md:flex md:rounded-tl-xl md:rounded-bl-xl">
+                        class="form-image bg-[url('./src/assets/hero.png')] opacity-90 md:w-1/2 bg-cover bg-center w-full  hidden md:flex md:rounded-tl-xl md:rounded-bl-xl">
                     </div>
 
                     <div
@@ -379,7 +395,7 @@
             Informática.</div>
     </footer>
 
-    <!-- MODAL -->
+    <!-- Modal -->
     <div id="modal" class="fixed inset-0 bg-black/90 hidden items-center justify-center z-50">
         <div class="relative">
             <img id="modal-img" class="max-w-[90vw] max-h-[90vh] rounded-lg shadow-lg">
