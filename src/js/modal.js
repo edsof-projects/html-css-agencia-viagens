@@ -2,10 +2,10 @@ export function modal() {
     const modal         = document.getElementById("modal");
     const modalImg      = document.getElementById("modal-img");
     const closeModal    = document.getElementById("close-modal");
-    const fotos         = document.querySelectorAll('.foto')
+    const fotoClicada   = document.querySelectorAll('.foto')
 
-    // pega todas as imagens clicáveis
-    fotos.forEach(img => {
+    // pega todas as imagens clicáveis ou seja com a classe .foto
+    fotoClicada.forEach(img => {
         img.addEventListener("click", () => {
             modalImg.src = img.src;           // coloca a imagem no modal
             modal.classList.remove("hidden"); // exibe modal
