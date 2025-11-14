@@ -26,37 +26,65 @@
 
 <body class="bg-[#f9fbfc]">
     <header
-        class="w-full bg-[var(--color-primary)] h-[70px] flex items-center justify-between min-[370px]:px-6 min-[320px]:px-1  relative md:fixed z-50">
-        <a href="#inicio"><span
-                class="min-[320px]:text-[20px] min-[370px]:text-2xl text-white font-bold whitespace-nowrap hover:text-[var(--color-secondary)]">Viagem
-                dos
-                Sonhos ✈️</span></a>
+        id="header"
+        class="w-full h-[70px] flex items-center justify-between min-[370px]:px-6 min-[320px]:px-1
+               relative md:fixed z-50 transition-all duration-300 bg-[var(--color-primary)]">
+
+        <a href="#inicio">
+            <span
+                class="min-[320px]:text-[20px] min-[370px]:text-2xl text-white font-bold 
+                       whitespace-nowrap hover:text-[var(--color-secondary)]">
+                Viagem dos Sonhos ✈️
+            </span>
+        </a>
+
         <nav 
             id="nav"
-            class="w-full hidden absolute top-[100%] left-0 h-[calc(100vh-70px)] bg-gray-950 items-center 
-                   justify-center lg:static lg:!flex lg:!flex-row lg:h-[70px] lg:!top-0 lg:bg-inherit"
+            class="w-full hidden absolute top-[100%] left-0 h-[calc(100vh-70px)]  items-center 
+                   justify-center lg:static lg:!flex lg:!flex-row lg:h-[70px] lg:!top-0 "
             >
             <ul class="flex flex-col lg:flex-row lg:gap-2">
-                <li class="p-2 text-center link"><a href="#inicio"
-                        class="text-[var(--color-secondary)] text-[16px] decoration-orange-400 decoration-3 lg:text-white">Início</a>
+                <li class="p-2 text-center link inline-block">
+                    <a href="#inicio"
+                         class="text-[var(--color-secondary)] text-[16px] decoration-3 hover:font-bold">
+                         Início
+                    </a>
                 </li>
-                <li class="p-2 text-center link"><a href="#carousel-wrapper"
-                        class="text-[var(--color-secondary)] text-[16px]  decoration-orange-400 decoration-3 lg:text-white">Serviços</a>
+                <li class="p-2 text-center link inline-block">
+                    <a href="#carousel-wrapper"
+                         class="text-[var(--color-secondary)] text-[16px] decoration-3 hover:font-bold lg:text-white">
+                         Serviços
+                    </a>
                 </li>
-                <li class="p-2 text-center link"><a href="#destinos" id="link-destinos"
-                        class="text-[var(--color-secondary)] text-[16px]  decoration-orange-400 decoration-3 lg:text-white">Destinos</a>
+                <li class="p-2 text-center link inline-block">
+                    <a href="#destinos" id="link-destinos"
+                         class="text-[var(--color-secondary)] text-[16px] decoration-3 hover:font-bold lg:text-white">
+                         Destinos
+                    </a>
                 </li>
-                <li class="p-2 text-center link"><a href="#galeria"
-                        class="text-[var(--color-secondary)] text-[16px]  decoration-orange-400 decoration-3 lg:text-white">Galeria</a>
+                <li class="p-2 text-center link inline-block">
+                    <a href="#galeria"
+                         class="text-[var(--color-secondary)] text-[16px] decoration-3 hover:font-bold lg:text-white">
+                         Galeria
+                    </a>
                 </li>                
-                <li class="p-2 text-center link"><a href="#promocoes" id="link-promocoes"
-                        class="text-[var(--color-secondary)] text-[16px]  decoration-orange-400 decoration-3 lg:text-white">Promoções</a>
+                <li class="p-2 text-center link inline-block">
+                    <a href="#promocoes" id="link-promocoes"
+                         class="text-[var(--color-secondary)] text-[16px] decoration-3 hover:font-bold lg:text-white">
+                         Promoções
+                    </a>
                 </li>
-                <li class="p-2 text-center link"><a href="#clientes" id="link-parcerias"
-                        class="text-[var(--color-secondary)] text-[16px]  decoration-orange-400 decoration-3 lg:text-white">Clientes</a>
+                <li class="p-2 text-center link inline-block">
+                    <a href="#clientes" id="link-parcerias"
+                        class="text-[var(--color-secondary)] text-[16px] decoration-3 hover:font-bold lg:text-white">
+                         Clientes
+                    </a>
                 </li>
-                <li class="p-2 text-center link"><a href="#contato"
-                        class="text-[var(--color-secondary)] text-[16px]  decoration-orange-400 decoration-3 lg:text-white">Contato</a>
+                <li class="p-2 text-center link inline-block">
+                    <a href="#contato"
+                         class="text-[var(--color-secondary)] text-[16px] decoration-3 hover:font-bold lg:text-white">
+                         Contato
+                    </a>
                 </li>
             </ul>
         </nav>
@@ -77,7 +105,7 @@
             <p class="text-center text-white text-[17.6px] max-w-sm mx-auto">Viaje pelo mundo com conforto e
                 economia.Viva experiências<br> inesquecíveis</p>
             <a href="#" type="button"
-                class="bg-[var(--color-primary)] text-[var(--color-neutral-0)] hover:bg-[#004b7c]  hover:text-[white] py-3 px-6 lg:px-16 rounded-[25px] text-md mt-8 border-2 transition-all duration-100 ease-in font-semibold ">
+                class="bg-[var(--color-primary)] text-[var(--color-secondary)] hover:bg-[#004b7c]  hover:text-[white] py-3 px-6 lg:px-16 rounded-[25px] text-md mt-8 border-2 transition-all duration-100 ease-in font-semibold ">
                 Explorar agora
             </a>
         </section>
@@ -110,7 +138,7 @@
             <div class="cards grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-6 mt-8">
 
                 <div
-                    class="card w-full h-[330px] rounded-xl shadow-[0px_2px_8px_rgba(0,0,0,0.1)] overflow-hidden transition-[transform_0.3s,background_0.3s,color_0.3s] hover:scale-[1.03] cursor-pointer">
+                    class="card w-full h-[330px] rounded-xl shadow-[0px_2px_8px_rgba(0,0,0,0.1)] overflow-hidden transition-[transform_0.3s,background_0.3s,color_0.3s] hover:scale-[1.03] ">
                     <img src="./src/assets/cards/inglaterra.png" alt="imagem praia" class="w-full h-44 object-cover">
                     <h3 class="text-[var(--color-primary)] m-3 font-[700] text-[18.72px] text-center mt-6">
                         Inglaterra
@@ -121,7 +149,7 @@
                 </div>
 
                 <div
-                    class="card w-full h-[330px] rounded-xl shadow-[0px_2px_8px_rgba(0,0,0,0.1)] overflow-hidden transition-[transform_0.3s,background_0.3s,color_0.3s] hover:scale-[1.03] cursor-pointer">
+                    class="card w-full h-[330px] rounded-xl shadow-[0px_2px_8px_rgba(0,0,0,0.1)] overflow-hidden transition-[transform_0.3s,background_0.3s,color_0.3s] hover:scale-[1.03] ">
                     <img src="./src/assets/cards/franca.png" alt="imagem montanha" class="w-full h-44 object-cover">
                     <h3 class="text-[var(--color-primary)] m-3 font-[700] text-[18.72px] text-center mt-6">
                         França
@@ -132,7 +160,7 @@
                 </div>
 
                 <div
-                    class="card w-full h-[330px] rounded-xl shadow-[0px_2px_8px_rgba(0,0,0,0.1)] overflow-hidden transition-[transform_0.3s,background_0.3s,color_0.3s] hover:scale-[1.03] cursor-pointer">
+                    class="card w-full h-[330px] rounded-xl shadow-[0px_2px_8px_rgba(0,0,0,0.1)] overflow-hidden transition-[transform_0.3s,background_0.3s,color_0.3s] hover:scale-[1.03] ">
                     <img src="./src/assets/cards/italia.png" alt="imagem cultura" class="w-full h-44 object-cover">
                     <h3 class="text-[var(--color-primary)] m-3 font-[700] text-[18.72px] text-center mt-6">
                         Itália
@@ -237,7 +265,7 @@
                     <p class="text-left text-white text-4xl mx-4 mb-4">R$ 1850,00</p>
 
                     <div class="center">
-                        <button class=" py-2 px-8 mx-16 rounded-md cursor-pointer font-bold bg-[var(--color-primary)] text-[var(--color-neutral-0)] 
+                        <button class=" py-2 px-8 mx-16 rounded-md cursor-pointer font-bold bg-[var(--color-primary)] text-[var(--color-secondary)] 
                         border border-transparent hover:bg-[#004b7c]  hover:text-[white] hover:border-white">
                             Ver Plano
                         </button>
@@ -282,7 +310,7 @@
                     <p class="text-left text-white text-4xl mx-4 mb-4">R$ 2350,00</p>
 
                     <div class="center">
-                        <button class=" py-2 px-8 mx-16 rounded-md cursor-pointer font-bold bg-[var(--color-primary)] text-[var(--color-neutral-0)] 
+                        <button class=" py-2 px-8 mx-16 rounded-md cursor-pointer font-bold bg-[var(--color-primary)] text-[var(--color-secondary)]
                         border border-transparent hover:bg-[#004b7c]  hover:text-[white] hover:border-white">
                             Ver Plano
                         </button>
@@ -327,7 +355,7 @@
                     <p class="text-left text-white text-4xl mx-4 mb-4">R$ 3260,00</p>
 
                     <div class="center">
-                        <button class=" py-2 px-8 mx-16 rounded-md cursor-pointer font-bold bg-[var(--color-primary)] text-[var(--color-neutral-0)] 
+                        <button class=" py-2 px-8 mx-16 rounded-md cursor-pointer font-bold bg-[var(--color-primary)] text-[var(--color-secondary)]
                         border border-transparent hover:bg-[#004b7c]  hover:text-[white] hover:border-white">
                             Ver Plano
                         </button>
@@ -468,7 +496,7 @@
                             </div>
                             <div class="area-button w-full">
                                 <button
-                                    class="w-full p-2  md:px-20 rounded-lg bg-[var(--color-primary)] text-white 
+                                    class="w-full p-2  md:px-20 rounded-lg bg-[var(--color-primary)] text-[var(--color-secondary)] 
                                             text-lg sm:text-xl border border-transparent hover:bg-[#004b7c] 
                                             hover:text-[white] hover:border-white cursor-pointer text-center"
                                     type="button">
