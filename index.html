@@ -32,8 +32,8 @@
                 dos
                 Sonhos ✈️</span></a>
         <nav id="nav"
-            class="w-full hidden absolute top-[100%] left-0 h-[calc(100vh-70px)] bg-gray-950 items-center justify-center md:static md:!flex md:!flex-row md:h-[70px] md:!top-0 md:bg-inherit">
-            <ul class="flex flex-col md:flex-row md:gap-2">
+            class="w-full hidden absolute top-[100%] left-0 h-[calc(100vh-70px)] bg-gray-950 items-center justify-center lg:static lg:!flex lg:!flex-row lg:h-[70px] lg:!top-0 lg:bg-inherit">
+            <ul class="flex flex-col md:flex-col xl:flex-row md:gap-2">
                 <li class="p-2 text-center link"><a href="#inicio"
                         class="text-[var(--color-secondary)] text-[23px] md:text-[17px] md:hover:underline decoration-orange-400 decoration-3 md:text-white">Início</a>
                 </li>
@@ -49,8 +49,8 @@
                 <li class="p-2 text-center link"><a href="#promocoes" id="link-promocoes"
                         class="text-[var(--color-secondary)] text-[23px] md:text-[17px] md:hover:underline  decoration-orange-400 decoration-3 md:text-white">Promoções</a>
                 </li>
-                <li class="p-2 text-center link"><a href="#parcerias" id="link-parcerias"
-                        class="text-[var(--color-secondary)] text-[23px] md:text-[17px] md:hover:underline  decoration-orange-400 decoration-3 md:text-white">Parcerias</a>
+                <li class="p-2 text-center link"><a href="#clientes" id="link-parcerias"
+                        class="text-[var(--color-secondary)] text-[23px] md:text-[17px] md:hover:underline  decoration-orange-400 decoration-3 md:text-white">Clientes</a>
                 </li>
                 <li class="p-2 text-center link"><a href="#contato"
                         class="text-[var(--color-secondary)] text-[23px] md:text-[17px] md:hover:underline  decoration-orange-400 decoration-3 md:text-white">Contato</a>
@@ -59,7 +59,7 @@
         </nav>
         <div class="flex items-center gap-2">
             <span class="text-2xl cursor-pointer">🌙</span>
-            <i class="fa-solid fa-bars text-white font-bold min-[370px]:text-[26px] min-[320px]:text-[20px]  md:!hidden"
+            <i class="fa-solid fa-bars text-white font-bold min-[370px]:text-[26px] min-[320px]:text-[20px]  lg:!hidden"
                 id="hamburger"></i>
         </div>
     </header>
@@ -323,13 +323,66 @@
 
         </section>
 
-        <section class="parcerias mb-0 py-2 px-4 relative" id="parcerias">
-            <h2 class="text-center text-3xl text-[var(--color-titles)] font-[700] mb-7">Parcerias</h2>
+        <section class="clientes mb-0 p-1 max-w-8/10 m-auto" id="clientes">
+            <h2 class="text-center text-3xl text-[var(--color-titles)] font-[700] mb-7">Clientes</h2>
 
-            <div class="galeria grid grid-cols-[repeat(auto-fit,minmax(250px,2fr))] gap-6 mt-8 ">
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-6 mt-8 ">
 
-                <div class="flex items-center justify-center gap-2 flex-wrap">
-                    
+                <div class="flex items-center justify-center gap-8 flex-wrap bg-gray-900 py-16 rounded-2xl">
+                    <img 
+                        src="./src/assets/clientes/img1.png" 
+                        alt="imagem cliente"
+                        class="foto cursor-pointer w-[120px] rounded-full shadow-md 
+                        border-2 border-[var(--color-secondary)]"
+                    >
+                    <img 
+                        src="./src/assets/clientes/img2.png" 
+                        alt="imagem cliente"
+                        class="foto cursor-pointer w-[120px] rounded-full shadow-md 
+                        border-2 border-[var(--color-secondary)]"
+                    >
+                    <img 
+                        src="./src/assets/clientes/img3.png" 
+                        alt="imagem cliente"
+                        class="foto cursor-pointer w-[120px] rounded-full shadow-md 
+                        border-2 border-[var(--color-secondary)]"
+                    >
+                    <img 
+                        src="./src/assets/clientes/img4.png" 
+                        alt="imagem cliente"
+                        class="foto cursor-pointer w-[120px] rounded-full shadow-md 
+                        border-2 border-[var(--color-secondary)]"
+                    >
+                    <img 
+                        src="./src/assets/clientes/img5.png" 
+                        alt="imagem cliente"
+                        class="foto cursor-pointer w-[120px] rounded-full shadow-md 
+                        border-2 border-[var(--color-secondary)]"
+                    >
+                    <img 
+                        src="./src/assets/clientes/img6.png" 
+                        alt="imagem cliente"
+                        class="foto cursor-pointer w-[120px] rounded-full shadow-md 
+                        border-2 border-[var(--color-secondary)]"
+                    >
+                    <img 
+                        src="./src/assets/clientes/img7.png" 
+                        alt="imagem cliente"
+                        class="foto cursor-pointer w-[120px] rounded-full shadow-md 
+                        border-2 border-[var(--color-secondary)]"
+                    >
+                    <img 
+                        src="./src/assets/clientes/img8.png" 
+                        alt="imagem cliente"
+                        class="foto cursor-pointer w-[120px] rounded-full shadow-md 
+                        border-2 border-[var(--color-secondary)]"
+                    >                   
+                    <img 
+                        src="./src/assets/clientes/img9.png" 
+                        alt="imagem cliente"
+                        class="foto cursor-pointer w-[120px] rounded-full shadow-md 
+                        border-2 border-[var(--color-secondary)]"
+                    >                   
                 </div>
 
             </div>
@@ -342,11 +395,11 @@
 
                 <div class="flex">
                     <div
-                        class="form-image bg-[url('./src/assets/hero.png')] opacity-90 md:w-1/2 bg-cover bg-center w-full  hidden md:flex md:rounded-tl-xl md:rounded-bl-xl">
+                        class="form-image bg-[url('./src/assets/hero.png')] opacity-90 md:w-1/2 bg-cover bg-center w-full hidden lg:flex md:rounded-tl-xl md:rounded-bl-xl ">
                     </div>
 
                     <div
-                        class="formulario py-9 px-7 flex flex-1 w-full md:w-1/2 bg-[var(--color-titles)] rounded-3xl md:rounded-tl-none md:rounded-bl-none">
+                        class="formulario py-9 px-7 flex flex-1 w-full md:w-1/2 bg-[var(--color-titles)] rounded-3xl  lg:rounded-tl-none lg:rounded-bl-none">
                         <form class="w-full">
                             <div class="form-header">
                                 <div class="title flex justify-center">
@@ -377,9 +430,12 @@
                             </div>
                             <div class="area-button w-full">
                                 <button
-                                    class="w-1/4 p-2 rounded-lg bg-[var(--color-primary)] text-white text-xl font-semibold 
-                                border border-transparent hover:bg-[#004b7c]  hover:text-[white] hover:border-white cursor-pointer"
-                                    type="button">Enviar</button>
+                                    class="w-full p-2  md:px-20 rounded-lg bg-[var(--color-primary)] text-white 
+                                            text-lg sm:text-xl border border-transparent hover:bg-[#004b7c] 
+                                            hover:text-[white] hover:border-white cursor-pointer text-center"
+                                    type="button">
+                                    Enviar
+                                </button>
                             </div>
                         </form>
                     </div>
