@@ -17,7 +17,7 @@
 </p>
 
 <p align="center">
-  <img alt="" src="./src/.github/logo-plane.png" width="20%">
+  <img alt="logo do site" src="./src/.github/logo-plane.png" width="20%">
 </p>
 
 ## 🚀 Tecnologias
