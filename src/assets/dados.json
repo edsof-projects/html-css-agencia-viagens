@@ -1,0 +1,62 @@
+[
+    {
+        "id"        : 1,
+        "cidade"    : "Paris",
+        "descricao" : "cidade luz"
+    },
+    {
+        "id"        : 2,
+        "cidade"    : "Roma",
+        "descricao" : "cidade eterna"
+    },
+    {
+        "id"        : 3,
+        "cidade"    : "Londres",
+        "descricao" : "metropole tradicional"
+    },
+    {
+        "id"        : 4,
+        "cidade"    : "Sydney",
+        "descricao" : "doce refúgio"
+    },
+    {
+        "id"        : 5,
+        "cidade"    : "Big Ben",
+        "descricao" : "o mais icônico"
+    },
+    {
+        "id"        : 6,
+        "cidade"    : "Arco do Triunfo",
+        "descricao" : "grandioso"
+    },
+    {
+        "id"        : 7,
+        "cidade"    : "Moscou",
+        "descricao" : "a majestosa"
+    },
+    {
+        "id"        : 8,
+        "cidade"    : "Rio de Janeiro",
+        "descricao" : "cidade maravilhosa"
+    },
+    {
+        "id"        : 9,
+        "cidade"    : "Buenos Aires",
+        "descricao" : "a capital do tango"
+    },
+    {
+        "id"        : 10,
+        "cidade"    : "Nova York",
+        "descricao" : "cidade que nunca dorme"
+    },
+    {
+        "id"        : 11,
+        "cidade"    : "Milão",
+        "descricao" : "coração da moda"
+    },
+    {
+        "id"        : 12,
+        "cidade"    : "Madrid",
+        "descricao" : "sabor e história se encontram"
+    }
+]

@@ -73,5 +73,4 @@ links.forEach(link => {
   });
 });
 
-
 modal()
