@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  <img alt="" src="./github/preview.png" width="100%">
+  <img alt="" src=".github/preview-desktop.png" width="100%">
 </p>
 
 <p align="center">
@@ -17,7 +17,7 @@
 </p>
 
 <p align="center">
-  <img alt="" src="./github/logo-plane.png" width="20%">
+  <img alt="" src=".github/logo-plane.png" width="20%">
 </p>
 
 <br>
@@ -54,5 +54,5 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 Todos os direitos reservados a [edsof informática]
 <p align="left">
-  <img alt="" src="./github/logo-Edsof.png" width="10%">
+  <img alt="" src=".github/logo-Edsof.png" width="10%">
 </p>
