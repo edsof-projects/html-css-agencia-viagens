@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  <img alt="imagem preview" src=".github/preview-desktop.png" width="100%">
+  <img alt="imagem preview" src="./src/.github/preview.png" width="100%">
 </p>
 
 <p align="center">
@@ -23,7 +23,7 @@
 <br>
 
 <p align="center">
-  <img alt="" src="./src/.github/preview-desktop.png" width="100%">
+  <img alt="imagem preview" src="./src/.github/preview-desktop.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
