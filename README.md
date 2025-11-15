@@ -54,5 +54,5 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 Todos os direitos reservados a [edsof informática]
 <p align="left">
-  <img alt="imagem logo edsof" src="./src/.github/logo-Edsof.png" width="10%">
+  <img alt="imagem logo edsof" src="./src/.github/logo-EDSOF.png" width="10%">
 </p>
