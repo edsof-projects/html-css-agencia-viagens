@@ -52,16 +52,20 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// Marca o link clicado
+// Marca o link clicado SOMENTE no XL
 links.forEach(link => {
   link.addEventListener("click", () => {
-    // Remove destaque de todos
+
+    // Só executa se for >= 1024px
+    if (window.innerWidth < 1024) return;
+
+    // Remove destaque de todos os links
     links.forEach(l => {
       l.classList.remove(
         "text-[var(--color-secondary)]",
         "font-bold"
       );
-      l.classList.add("lg:text-white"); // garante cor base no desktop
+      l.classList.add("lg:text-white");
     });
 
     // Aplica destaque no link clicado
@@ -72,5 +76,6 @@ links.forEach(link => {
     link.classList.remove("lg:text-white");
   });
 });
+
 
 modal()
