@@ -24,3 +24,13 @@ nav.active{
 .modal-foto.active{
     display: flex;
 }
+
+.title::after {
+  content: "";
+  display: block;
+  width: 60px;       /* tamanho da linha */
+  height: 6px;       /* espessura */
+  background: var(--color-secondary);
+  margin: 8px auto 0;
+  border-radius: 4px;
+}
