@@ -1,15 +1,16 @@
 import { scrollSmoot } from './scrollSmoot.js';
 import { modal }       from './modal.js';
 
-const menu       = document.querySelector('#hamburger')
+const menuBurger = document.querySelector('#hamburger')
 const nav        = document.querySelector('#nav')
 const header     = document.querySelector('#header')
 const links      = document.querySelectorAll("nav a");
 
-menu.addEventListener('click', () => {
+// Troca a imagem do botão Burger quado o mesmo recebe o click
+menuBurger.addEventListener('click', () => {
+  menuBurger.classList.toggle('fa-bars')
+  menuBurger.classList.toggle('fa-close')
   nav.classList.toggle('active')
-  menu.classList.toggle('fa-bars')
-  menu.classList.toggle('fa-close')
 })
 
 // Efeito ao clicar em um link do nav
@@ -24,10 +25,10 @@ document.querySelectorAll('nav a[href^="#"]').forEach(link => {
 
     scrollSmoot(destinoY, 2500);
 
-    // Fecha o menu ao clicar em um link
+    // Fecha o menuBurger ao clicar em um link
     nav.classList.remove('active');
-    menu.classList.toggle('fa-bars')
-    menu.classList.toggle('fa-close')
+    menuBurger.classList.toggle('fa-bars')
+    menuBurger.classList.toggle('fa-close')
 
     /* 2500ms = 2.5 segundos (bem lento)
       Valor	Velocidade
@@ -52,11 +53,11 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// Marca o link clicado SOMENTE no XL
+// Marca o link quando clicado -> SOMENTE no XL
 links.forEach(link => {
   link.addEventListener("click", () => {
 
-    // Só executa se for >= 1024px
+    // Só executa se for >= 1024px no XL
     if (window.innerWidth < 1024) return;
 
     // Remove destaque de todos os links
@@ -77,5 +78,14 @@ links.forEach(link => {
   });
 });
 
+//DARK MODE
+const darkModeToggle = document.querySelector('#darkModeToggle')
+
+darkModeToggle.addEventListener('click',()=>{
+    document.body.classList.toggle('dark')
+    document.body.classList.toggle('bg-[#f9fbfc]')
+    darkModeToggle.classList.toggle('fa-moon')
+    darkModeToggle.classList.toggle('fa-sun')
+})
 
 modal()

@@ -25,21 +25,30 @@ nav.active{
     display: flex;
 }
 
-/* .title::after {
-  content: "";
-  display: block;
-  width: 60px;      
-  height: 6px;      
-  background: var(--color-secondary);
-  margin: 8px auto 0;
-  border-radius: 4px;
-} */
-
 .title::after {
-  content: "";
-  display: block;
-  width: 120px;
-  height: 3px;
-  margin: 10px auto 0;
-  background: linear-gradient(to right, transparent, var(--color-secondary), transparent);
+  content     : "";
+  display     : block;
+  width       : 120px;
+  height      : 3px;
+  margin      : 10px auto 0;
+  background  : linear-gradient(to right, transparent, var(--color-secondary), transparent);
+}
+
+body.dark{
+  background-color: var(--color-neutral-1);
+  .title{
+    color: var(--color-neutral-0);
+  }
+  .destinos-footer p{
+    color: var(--color-neutral-0);
+  }
+  .card,
+  .galeria img{
+    border: 1px solid var(--color-neutral-0);
+  }
+
+  .area-clientes{
+    border: 1px solid var(--color-neutral-0);
+  }
+
 }

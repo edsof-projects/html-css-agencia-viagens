@@ -89,7 +89,7 @@
             </ul>
         </nav>
         <div class="flex items-center gap-2">
-            <span class="text-2xl cursor-pointer">🌙</span>
+            <i class="fa-solid fa-moon text-[var(--color-secondary)] text-2xl cursor-pointer" id="darkModeToggle"></i>
             <i class="fa-solid fa-bars text-white font-bold min-[370px]:text-[26px] min-[320px]:text-[20px]  lg:!hidden"
                 id="hamburger"></i>
         </div>
@@ -114,7 +114,8 @@
             <h2 class="title text-center text-3xl text-[var(--color-titles)] font-[700] mb-7">Serviços VIP</h2>
 
             <div class="relative overflow-hidden w-full max-w-[1500px] mx-auto" id="carousel-wrapper">
-                <div id="carousel" class="flex transition-transform duration-700 ease-in-out">
+
+                <div id="carousel" class="carousel flex transition-transform duration-700 ease-in-out">
                     <img src="./src/assets/servicos/img1.png" alt="1" class="w-full flex-shrink-0 object-cover rounded-2xl md:h-[500px]">
                     <img src="./src/assets/servicos/img2.png" alt="2" class="w-full flex-shrink-0 object-cover rounded-2xl md:h-[500px]">
                     <img src="./src/assets/servicos/img3.png" alt="3" class="w-full flex-shrink-0 object-cover rounded-2xl md:h-[500px]">
@@ -125,10 +126,12 @@
                     class="absolute top-1/2 left-4 -translate-y-1/2 bg-black/4 text-white/40 p-2 rounded-full hover:bg-black/30 cursor-pointer sm:w-15 text-4xl">
                     ‹
                 </button>
+
                 <button id="nextBtn"
                     class="absolute top-1/2 right-4 -translate-y-1/2 bg-black/4 text-white/40 p-2 rounded-full hover:bg-black/30 cursor-pointer sm:w-15 text-4xl">
                     ›
                 </button>
+
             </div>           
         </section>
 
@@ -138,37 +141,56 @@
             <div class="cards grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-6 mt-8">
 
                 <div
-                    class="card w-full h-[330px] rounded-xl shadow-[0px_2px_8px_rgba(0,0,0,0.1)] overflow-hidden transition-[transform_0.3s,background_0.3s,color_0.3s] hover:scale-[1.03] ">
-                    <img src="./src/assets/cards/inglaterra.png" alt="imagem praia" class="w-full h-44 object-cover">
-                    <h3 class="text-[var(--color-primary)] m-3 font-[700] text-[18.72px] text-center mt-6">
-                        Inglaterra
-                    </h3>
-                    <p class="text-center mx-4 mb-4 text-[15.2px]">
-                        Londres, sua capital, abriga ícones como o Big Ben, a Tower Bridge e o Palácio de Buckingham.
-                    </p>
+                    class="card w-full rounded-xl shadow-[0px_2px_8px_rgba(0,0,0,0.1)] overflow-hidden 
+                    transition-[transform_0.3s,background_0.3s,color_0.3s] hover:scale-[1.03]">                    
+                    <div class="destinos-footer">
+
+                        <img src="./src/assets/cards/inglaterra.png" alt="imagem praia" class="w-full h-44 object-cover">                    
+                        
+                        <h3 class="text-[var(--color-primary)] m-3 font-[700] text-[18.72px] text-center mt-6">
+                            Inglaterra
+                        </h3>
+                        
+                        <p class="text-center mx-4 mb-4 text-[15.2px]">
+                            Londres, sua capital, abriga ícones como o Big Ben, a Tower Bridge e o Palácio de Buckingham.
+                        </p>                    
+                        
+                    </div>
                 </div>
 
                 <div
-                    class="card w-full h-[330px] rounded-xl shadow-[0px_2px_8px_rgba(0,0,0,0.1)] overflow-hidden transition-[transform_0.3s,background_0.3s,color_0.3s] hover:scale-[1.03] ">
-                    <img src="./src/assets/cards/franca.png" alt="imagem montanha" class="w-full h-44 object-cover">
-                    <h3 class="text-[var(--color-primary)] m-3 font-[700] text-[18.72px] text-center mt-6">
-                        França
-                    </h3>
-                    <p class="text-center mx-4 mb-4 text-[15.2px]">
-                        Cidade Luz, Cultura, gastronomia e romance nas ruas mais charmosas do mundo..
-                    </p>
+                    class="card w-full rounded-xl shadow-[0px_2px_8px_rgba(0,0,0,0.1)] overflow-hidden 
+                    transition-[transform_0.3s,background_0.3s,color_0.3s] hover:scale-[1.03] ">
+                    <div class="destinos-footer">
+                        
+                        <img src="./src/assets/cards/franca.png" alt="imagem montanha" class="w-full h-44 object-cover">
+                        
+                        <h3 class="text-[var(--color-primary)] m-3 font-[700] text-[18.72px] text-center mt-6">
+                            França
+                        </h3>
+                        
+                        <p class="text-center mx-4 mb-4 text-[15.2px]">
+                            Cidade Luz, Cultura, gastronomia e romance nas ruas mais charmosas do mundo..
+                        </p>
+                    </div>
                 </div>
 
                 <div
-                    class="card w-full h-[330px] rounded-xl shadow-[0px_2px_8px_rgba(0,0,0,0.1)] overflow-hidden transition-[transform_0.3s,background_0.3s,color_0.3s] hover:scale-[1.03] ">
-                    <img src="./src/assets/cards/italia.png" alt="imagem cultura" class="w-full h-44 object-cover">
-                    <h3 class="text-[var(--color-primary)] m-3 font-[700] text-[18.72px] text-center mt-6">
-                        Itália
-                    </h3>
-                    <p class="text-center mx-4 mb-4 text-[15.2px]">
-                        A Itália é sinônimo de arte, beleza e gastronomia, um país onde cada cidade carrega séculos de
-                        história e cultura.
-                    </p>
+                    class="card w-full rounded-xl shadow-[0px_2px_8px_rgba(0,0,0,0.1)] overflow-hidden 
+                    transition-[transform_0.3s,background_0.3s,color_0.3s] hover:scale-[1.03] ">
+                    <div class="destinos-footer">
+                        
+                        <img src="./src/assets/cards/italia.png" alt="imagem cultura" class="w-full h-44 object-cover">
+                        
+                        <h3 class="text-[var(--color-primary)] m-3 font-[700] text-[18.72px] text-center mt-6">
+                            Itália
+                        </h3>
+                        
+                        <p class="text-center mx-4 mb-4 text-[15.2px]">
+                            A Itália é sinônimo de arte, beleza e gastronomia, um país onde cada cidade carrega séculos de
+                            história e cultura.
+                        </p>
+                    </div>
                 </div>
 
             </div>
@@ -395,7 +417,7 @@
 
             <div class="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-6 mt-8 ">
 
-                <div class="flex items-center justify-center gap-8 flex-wrap bg-gray-900 py-16 rounded-2xl">
+                <div class="area-clientes flex items-center justify-center gap-8 flex-wrap bg-gray-900 py-16 rounded-2xl">
                     <img 
                         src="./src/assets/clientes/img1.png" 
                         alt="imagem cliente"
@@ -460,7 +482,7 @@
             <div class="flex flex-col w-full p-3">
                 <h2 class="title text-center text-3xl text-[var(--color-titles)] font-[700] mb-7">Contato</h2>
 
-                <div class="flex">
+                <div class="formulario flex">
                     <div
                         class="form-image bg-[url('./src/assets/hero.png')] opacity-90 md:w-1/2 bg-cover bg-center w-full hidden lg:flex md:rounded-tl-xl md:rounded-bl-xl ">
                     </div>
