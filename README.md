@@ -28,6 +28,19 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - JavaScript
 - [Tailwind CSS](https://tailwindcss.com/)
 
+Conceitos aplicados:
+✅ hero 
+✅ carousel de imagens
+✅ cards com imagens e textos
+✅ grids responsivos
+✅ formulário de contato
+✅ footer com dados do desenvolvedor
+✅ Responsividade em todo projeto
+✅ galeria de fotos com modal ao clicar
+✅ navbar fixo com efeito vidro na rolagem
+✅ leitura de dados.json através de fetch
+✅ ScrollSmoot com controle de velocidade
+
 ## 🚧 Projeto:
 
 Link do projeto publicado :[https://edsof-agencia-viagens.netlify.app/]
