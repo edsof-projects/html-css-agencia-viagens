@@ -14,42 +14,40 @@ document.addEventListener('DOMContentLoaded', () => {
   const totalSlides = slides.length;
   if (totalSlides === 0) return;
 
-  // vamos posicionar no primeiro slide "real"  
-  let index          = 1;     
+  let index          = 1;
   const delay        = 3000;
-  const transitionMs = 1500;
-  let intervalId     = null;
+  const transitionMs = 1200;
+  let timerId        = null;
+  let carouselIsMoving = false;
 
-  // Cria clones (lastClone antes, firstClone depois)
+  // ---- CLONES (Loop infinito suave) ----
   const firstClone = slides[0].cloneNode(true);
   const lastClone  = slides[slides.length - 1].cloneNode(true);
+
   carousel.insertBefore(lastClone, carousel.firstChild);
   carousel.appendChild(firstClone);
 
-  // Ajusta largura do container interno (opcional se cada slide for width:100%)
-  // Inicia posicionado no primeiro slide real (índice 1 no novo conjunto)
+  // Posição inicial
   carousel.style.transform = `translateX(-100%)`;
 
-  // Função para mover
+  // ---- MOVIMENTO ----
   function goTo(i) {
     carousel.style.transition = `transform ${transitionMs}ms ease-in-out`;
     carousel.style.transform  = `translateX(-${i * 100}%)`;
   }
 
-  // Ajuste ao terminar a transição (loop suave)
+  // Loop suave (corrige ao chegar nos clones)
   carousel.addEventListener('transitionend', () => {
-    const all = carousel.children;
-    // se foi para o clone final (índice totalSlides + 1) -> voltar ao 1
+    carouselIsMoving = false;
+
     if (index === totalSlides + 1) {
       carousel.style.transition = 'none';
       index = 1;
-      carousel.style.transform = `translateX(-${index * 100}%)`;
-      // força repaint para evitar glitch
-      void carousel.offsetWidth;
+      carousel.style.transform = `translateX(-100%)`;
+      void carousel.offsetWidth; // repintar
       carousel.style.transition = `transform ${transitionMs}ms ease-in-out`;
     }
 
-    // se foi para o clone do começo (índice 0) -> pular para último real
     if (index === 0) {
       carousel.style.transition = 'none';
       index = totalSlides;
@@ -59,7 +57,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Funções de controle
+  // Detecta início da transição
+  carousel.addEventListener('transitionstart', () => {
+    carouselIsMoving = true;
+  });
+
+
+  // ---- BOTÕES ----
   function next() {
     if (carouselIsMoving) return;
     index++;
@@ -72,12 +76,6 @@ document.addEventListener('DOMContentLoaded', () => {
     goTo(index);
   }
 
-  // proteção simples contra cliques muito rápidos
-  let carouselIsMoving = false;
-  carousel.addEventListener('transitionstart', () => (carouselIsMoving = true));
-  carousel.addEventListener('transitionend', () => (carouselIsMoving = false));
-
-  // Botões
   nextBtn.addEventListener('click', () => {
     stopAuto();
     next();
@@ -90,25 +88,46 @@ document.addEventListener('DOMContentLoaded', () => {
     startAuto();
   });
 
-  // Autoplay com pausa entre imagens (delay + transition)
+
+  // ---- AUTOPLAY ESTÁVEL (SEM PULOS) ----
   function startAuto() {
     stopAuto();
-    intervalId = setInterval(() => {
+    timerId = setTimeout(function autoLoop() {
       next();
+      timerId = setTimeout(autoLoop, delay + transitionMs);
     }, delay + transitionMs);
   }
 
   function stopAuto() {
-    if (intervalId) {
-      clearInterval(intervalId);
-      intervalId = null;
+    if (timerId) {
+      clearTimeout(timerId);
+      timerId = null;
     }
   }
 
-  // Pausar ao hover do wrapper (botões e área)
+
+  // ---- CORREÇÃO CRUCIAL: PERDEU O FOCO DA ABA → RESET SEGURO ----
+  document.addEventListener("visibilitychange", () => {
+    if (!document.hidden) {
+      // Voltou para a aba → corrigir estado
+      stopAuto();
+      carousel.style.transition = 'none';
+      index = 1;
+      carousel.style.transform = `translateX(-100%)`;
+      void carousel.offsetWidth;
+      carousel.style.transition = `transform ${transitionMs}ms ease-in-out`;
+      startAuto();
+    } else {
+      // Saindo da aba → pausa autoplay
+      stopAuto();
+    }
+  });
+
+
+  // ---- PAUSA NO HOVER ----
   wrapper.addEventListener('mouseenter', stopAuto);
   wrapper.addEventListener('mouseleave', startAuto);
 
-  // inicia autoplay
+  // Iniciar autoplay
   startAuto();
 });
