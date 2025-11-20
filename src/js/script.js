@@ -88,4 +88,16 @@ darkModeToggle.addEventListener('click',()=>{
     darkModeToggle.classList.toggle('fa-sun')
 })
 
+//COPY FOOTER criando parágrafo com texto e ano atual
+const ano        = new Date().getFullYear()
+const copyFooter = document.querySelector("#copy")
+
+// Criar o elemento <p>
+const p = document.createElement('p');
+
+p.innerHTML = `© ${ano} Viagem dos Sonhos <br> Todos os direitos reservados a Edsof Informática.`;
+
+// Inserir p dentro da div
+copyFooter.appendChild(p);
+
 modal()
