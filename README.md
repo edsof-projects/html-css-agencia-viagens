@@ -40,10 +40,11 @@ Conceitos aplicados:
 ✅ navbar fixo com efeito vidro na rolagem
 ✅ leitura de dados.json através de fetch
 ✅ ScrollSmoot com controle de velocidade
+✅ Opção entre modo Dark e light
 
 ## 🚧 Projeto:
 
-Link do projeto publicado :[https://sites.dicadecompra.com/agencia-de-viagens/]
+Link do projeto publicado :[https://edsof.dicadecompra.com/agencia-de-viagens/]
 
 Link do repositório       :[https://github.com/edsof-projects/html-css-agencia-viagens]
 
