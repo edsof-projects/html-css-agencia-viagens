@@ -58,14 +58,18 @@ Youtube - Canal: [@DesvendandooCodigo](https://www.youtube.com/@DesvendandooCodi
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
----
-
-Todos os direitos reservados a [edsof informática]
-<p align="left">
-  <img alt="imagem logo edsof" src="./src/.github/logo-EDSOF.png" width="10%">
-</p>
+## 👨🏿‍🦱 Autor:
 
 <p>
    Autor : Edi Aquino de Souza
    [https://www.linkedin.com/in/edsouzza/]
 </p>
+
+---
+
+## ©Copyright:
+
+<p align="left" with="32">
+  <img alt="imagem logo edsof" src="./src/.github/logo-EDSOF.png" width="10%">
+</p>
+Todos os direitos reservados a [edsof informática]
