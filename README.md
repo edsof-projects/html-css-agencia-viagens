@@ -65,11 +65,11 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
    [https://www.linkedin.com/in/edsouzza/]
 </p>
 
----
+## © Copyright:
 
-## ©Copyright:
-
-<p align="left" with="32">
-  <img alt="imagem logo edsof" src="./src/.github/logo-EDSOF.png" width="10%">
+<p align="left">
+  <img alt="imagem logo edsof" src="./src/.github/logo-edsof.png" width="100%">
 </p>
 Todos os direitos reservados a [edsof informática]
+
+---
