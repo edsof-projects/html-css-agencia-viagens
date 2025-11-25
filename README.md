@@ -64,3 +64,8 @@ Todos os direitos reservados a [edsof informática]
 <p align="left">
   <img alt="imagem logo edsof" src="./src/.github/logo-EDSOF.png" width="10%">
 </p>
+
+<p>
+   Autor : Edi Aquino de Souza
+   [https://www.linkedin.com/in/edsouzza/]
+</p>
