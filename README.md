@@ -63,7 +63,7 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 ## 👨🏿‍🦱 Autor:
 
 <p>
-   Autor : Edi Aquino de Souza
+   Edi Aquino de Souza
    [https://www.linkedin.com/in/edsouzza/]
 </p>
 
