@@ -42,21 +42,23 @@ Conceitos aplicados:
 ✅ ScrollSmoot com controle de velocidade
 ✅ Opção entre modo Dark e light
 
+
 ## 🚧 Projeto:
 
 Link do projeto publicado :[https://edsof.dicadecompra.com/agencia-de-viagens/]
 
 Link do repositório       :[https://github.com/edsof-projects/html-css-agencia-viagens]
 
-## ✅ Status: [Finalizado]
 
 ## 🎨 Inspiração:
 
 Youtube - Canal: [@DesvendandooCodigo](https://www.youtube.com/@DesvendandooCodigo)
 
-## :memo: Licença
+
+## :memo: Licença :
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
 
 ## 👨🏿‍🦱 Autor:
 
@@ -65,10 +67,11 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
    [https://www.linkedin.com/in/edsouzza/]
 </p>
 
+
 ## © Copyright:
 
 <p align="left">
-  <img alt="imagem logo edsof" src="./src/.github/logo-edsof.png" width="100%">
+  <img alt="imagem logo edsof" src="./src/.github/logo-da-edsof.png" width="100%">
 </p>
 Todos os direitos reservados a [edsof informática]
 
